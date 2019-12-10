@@ -6,25 +6,30 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface T_teacherMapper {
-    int countByExample(T_teacherExample example);
 
-    int deleteByExample(T_teacherExample example);
+  int countByExample(T_teacherExample example);
 
-    int deleteByPrimaryKey(String tno);
+  int deleteByExample(T_teacherExample example);
 
-    int insert(T_teacher record);
+  int deleteByPrimaryKey(String tno);
 
-    int insertSelective(T_teacher record);
+  int insert(T_teacher record);
 
-    List<T_teacher> selectByExample(T_teacherExample example);
+  int insertSelective(T_teacher record);
 
-    T_teacher selectByPrimaryKey(String tno);
+  List<T_teacher> selectByExample(T_teacherExample example);
 
-    int updateByExampleSelective(@Param("record") T_teacher record, @Param("example") T_teacherExample example);
+  T_teacher selectByPrimaryKey(String tno);
 
-    int updateByExample(@Param("record") T_teacher record, @Param("example") T_teacherExample example);
+  int updateByExampleSelective(@Param("record") T_teacher record,
+      @Param("example") T_teacherExample example);
 
-    int updateByPrimaryKeySelective(T_teacher record);
+  int updateByExample(@Param("record") T_teacher record,
+      @Param("example") T_teacherExample example);
 
-    int updateByPrimaryKey(T_teacher record);
+  int updateByPrimaryKeySelective(T_teacher record);
+
+  int updateByPrimaryKey(T_teacher record);
+
+  List<T_teacher> queryAllTeacherInfo();
 }

@@ -1,63 +1,64 @@
 package com.test.model;
 
 public class T_file {
-    private Integer fno;
 
-    private String filename;
+  private Integer fno;
 
-    private String filetype;
+  private String filename;
 
-    private String time;
+  private String filetype;
 
-    private Integer taskNo;
+  private String time;
 
-    private String owePerno;
+  private Integer taskNo;
 
-    public Integer getFno() {
-        return fno;
-    }
+  private String owePerno;
 
-    public void setFno(Integer fno) {
-        this.fno = fno;
-    }
+  public Integer getFno() {
+    return fno;
+  }
 
-    public String getFilename() {
-        return filename;
-    }
+  public void setFno(Integer fno) {
+    this.fno = fno;
+  }
 
-    public void setFilename(String filename) {
-        this.filename = filename == null ? null : filename.trim();
-    }
+  public String getFilename() {
+    return filename;
+  }
 
-    public String getFiletype() {
-        return filetype;
-    }
+  public void setFilename(String filename) {
+    this.filename = filename == null ? null : filename.trim();
+  }
 
-    public void setFiletype(String filetype) {
-        this.filetype = filetype == null ? null : filetype.trim();
-    }
+  public String getFiletype() {
+    return filetype;
+  }
 
-    public String getTime() {
-        return time;
-    }
+  public void setFiletype(String filetype) {
+    this.filetype = filetype == null ? null : filetype.trim();
+  }
 
-    public void setTime(String time) {
-        this.time = time == null ? null : time.trim();
-    }
+  public String getTime() {
+    return time;
+  }
 
-    public Integer getTaskNo() {
-        return taskNo;
-    }
+  public void setTime(String time) {
+    this.time = time == null ? null : time.trim();
+  }
 
-    public void setTaskNo(Integer taskNo) {
-        this.taskNo = taskNo;
-    }
+  public Integer getTaskNo() {
+    return taskNo;
+  }
 
-    public String getOwePerno() {
-        return owePerno;
-    }
+  public void setTaskNo(Integer taskNo) {
+    this.taskNo = taskNo;
+  }
 
-    public void setOwePerno(String owePerno) {
-        this.owePerno = owePerno == null ? null : owePerno.trim();
-    }
+  public String getOwePerno() {
+    return owePerno;
+  }
+
+  public void setOwePerno(String owePerno) {
+    this.owePerno = owePerno == null ? null : owePerno.trim();
+  }
 }

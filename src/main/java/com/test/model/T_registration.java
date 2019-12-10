@@ -1,63 +1,64 @@
 package com.test.model;
 
 public class T_registration {
-    private String rno;
 
-    private String province;
+  private String rno;
 
-    private String city;
+  private String province;
 
-    private String company;
+  private String city;
 
-    private String linkman;
+  private String company;
 
-    private String linkmanphone;
+  private String linkman;
 
-    public String getRno() {
-        return rno;
-    }
+  private String linkmanphone;
 
-    public void setRno(String rno) {
-        this.rno = rno == null ? null : rno.trim();
-    }
+  public String getRno() {
+    return rno;
+  }
 
-    public String getProvince() {
-        return province;
-    }
+  public void setRno(String rno) {
+    this.rno = rno == null ? null : rno.trim();
+  }
 
-    public void setProvince(String province) {
-        this.province = province == null ? null : province.trim();
-    }
+  public String getProvince() {
+    return province;
+  }
 
-    public String getCity() {
-        return city;
-    }
+  public void setProvince(String province) {
+    this.province = province == null ? null : province.trim();
+  }
 
-    public void setCity(String city) {
-        this.city = city == null ? null : city.trim();
-    }
+  public String getCity() {
+    return city;
+  }
 
-    public String getCompany() {
-        return company;
-    }
+  public void setCity(String city) {
+    this.city = city == null ? null : city.trim();
+  }
 
-    public void setCompany(String company) {
-        this.company = company == null ? null : company.trim();
-    }
+  public String getCompany() {
+    return company;
+  }
 
-    public String getLinkman() {
-        return linkman;
-    }
+  public void setCompany(String company) {
+    this.company = company == null ? null : company.trim();
+  }
 
-    public void setLinkman(String linkman) {
-        this.linkman = linkman == null ? null : linkman.trim();
-    }
+  public String getLinkman() {
+    return linkman;
+  }
 
-    public String getLinkmanphone() {
-        return linkmanphone;
-    }
+  public void setLinkman(String linkman) {
+    this.linkman = linkman == null ? null : linkman.trim();
+  }
 
-    public void setLinkmanphone(String linkmanphone) {
-        this.linkmanphone = linkmanphone == null ? null : linkmanphone.trim();
-    }
+  public String getLinkmanphone() {
+    return linkmanphone;
+  }
+
+  public void setLinkmanphone(String linkmanphone) {
+    this.linkmanphone = linkmanphone == null ? null : linkmanphone.trim();
+  }
 }

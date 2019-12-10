@@ -6,25 +6,30 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface T_studentMapper {
-    int countByExample(T_studentExample example);
 
-    int deleteByExample(T_studentExample example);
+  int countByExample(T_studentExample example);
 
-    int deleteByPrimaryKey(String sno);
+  int deleteByExample(T_studentExample example);
 
-    int insert(T_student record);
+  int deleteByPrimaryKey(String sno);
 
-    int insertSelective(T_student record);
+  int insert(T_student record);
 
-    List<T_student> selectByExample(T_studentExample example);
+  int insertSelective(T_student record);
 
-    T_student selectByPrimaryKey(String sno);
+  List<T_student> selectByExample(T_studentExample example);
 
-    int updateByExampleSelective(@Param("record") T_student record, @Param("example") T_studentExample example);
+  T_student selectByPrimaryKey(String sno);
 
-    int updateByExample(@Param("record") T_student record, @Param("example") T_studentExample example);
+  int updateByExampleSelective(@Param("record") T_student record,
+      @Param("example") T_studentExample example);
 
-    int updateByPrimaryKeySelective(T_student record);
+  int updateByExample(@Param("record") T_student record,
+      @Param("example") T_studentExample example);
 
-    int updateByPrimaryKey(T_student record);
+  int updateByPrimaryKeySelective(T_student record);
+
+  int updateByPrimaryKey(T_student record);
+
+  List<T_student> queryAllStudentInfo();
 }

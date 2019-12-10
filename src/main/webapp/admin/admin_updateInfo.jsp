@@ -89,7 +89,7 @@
         var name=$("#name").val();
         var phone=$("#phone").val();
         var qq=$("#qq").val();
-        var ADMIN_UPDATE_INFO_URL="http://localhost:8080/admin/admin_Update_Info/"+ano+"/"+name+"/"+phone+"/"+qq;
+        var ADMIN_UPDATE_INFO_URL="http://localhost:8080/admin/teacher_Info_Update/"+ano+"/"+name+"/"+phone+"/"+qq;
         $.ajax({
             contentType: "application/json",
             url:ADMIN_UPDATE_INFO_URL,
@@ -97,13 +97,7 @@
             type:"POST",
             statusCode:{
                 200:function(data){
-                    var str="";
-                    $(data).each(function(i,value){
-                        document.getElementById('ano').value=value.ano;
-                        document.getElementById('name').value=value.name;
-                        document.getElementById('phone').value=value.phone;
-                        document.getElementById('qq').value=value.qq;
-                    });
+                   alert("修改成功！")
                     window.location.href="admin_updateInfo.jsp";
                 },
                 404:function(){
@@ -121,7 +115,7 @@
     </div>
 
     <ul class="nav">
-        <li><a href="/teacher_mana_indexServlet"><img src="../images/icon02.png" title="教师管理"/>
+        <li><a href="teacher_management/teacher_mana_index.jsp"><img src="../images/icon02.png" title="教师管理"/>
             <h2>教师管理</h2></a></li>
         <li><a href="/student_manage"><img src="../images/icon03.png" title="学生管理"/>
             <h2>学生管理</h2></a></li>

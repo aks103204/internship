@@ -6,25 +6,27 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface T_adminMapper {
-    int countByExample(T_adminExample example);
 
-    int deleteByExample(T_adminExample example);
+  int countByExample(T_adminExample example);
 
-    int deleteByPrimaryKey(String ano);
+  int deleteByExample(T_adminExample example);
 
-    int insert(T_admin record);
+  int deleteByPrimaryKey(String ano);
 
-    int insertSelective(T_admin record);
+  int insert(T_admin record);
 
-    List<T_admin> selectByExample(T_adminExample example);
+  int insertSelective(T_admin record);
 
-    T_admin selectByPrimaryKey(String ano);
+  List<T_admin> selectByExample(T_adminExample example);
 
-    int updateByExampleSelective(@Param("record") T_admin record, @Param("example") T_adminExample example);
+  T_admin selectByPrimaryKey(String ano);
 
-    int updateByExample(@Param("record") T_admin record, @Param("example") T_adminExample example);
+  int updateByExampleSelective(@Param("record") T_admin record,
+      @Param("example") T_adminExample example);
 
-    int updateByPrimaryKeySelective(T_admin record);
+  int updateByExample(@Param("record") T_admin record, @Param("example") T_adminExample example);
 
-    int updateByPrimaryKey(T_admin record);
+  int updateByPrimaryKeySelective(T_admin record);
+
+  int updateByPrimaryKey(T_admin record);
 }

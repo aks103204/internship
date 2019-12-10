@@ -43,11 +43,11 @@
     </div>
 
     <ul class="nav">
-        <li><a href="/teacher_mana_indexServlet" ><img src="../../images/icon02.png" title="教师管理"/>
+        <li><a href="../teacher_management/teacher_mana_index.jsp" ><img src="../../images/icon02.png" title="教师管理"/>
             <h2>教师管理</h2></a></li>
-        <li><a href="/student_manage"><img src="../../images/icon03.png" title="学生管理"/>
+        <li><a href="../student_management/student_mana_index.jsp"><img src="../../images/icon03.png" title="学生管理"/>
             <h2>学生管理</h2></a></li>
-        <li><a href="/class_management_indexServlet"class="selected"><img src="../../images/icon01.png" title="班级管理"/>
+        <li><a href="../class_management/class_mana_index.jsp"class="selected"><img src="../../images/icon01.png" title="班级管理"/>
             <h2>班级管理</h2></a></li>
     </ul>
 

@@ -90,6 +90,9 @@
     from t_student
     where sno = #{sno,jdbcType=VARCHAR}
   </select>
+  <select id="queryAllStudentInfo"  resultType="com.test.model.T_student">
+    select * from t_student
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
     delete from t_student
     where sno = #{sno,jdbcType=VARCHAR}
@@ -105,6 +108,7 @@
       name, phone, qq)
     values (#{sno,jdbcType=VARCHAR}, #{cno,jdbcType=VARCHAR}, #{psd,jdbcType=VARCHAR}, 
       #{name,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{qq,jdbcType=VARCHAR})
+
   </insert>
   <insert id="insertSelective" parameterType="com.test.model.T_student" >
     insert into t_student

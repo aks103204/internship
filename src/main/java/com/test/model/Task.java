@@ -3,83 +3,84 @@ package com.test.model;
 import java.util.Date;
 
 public class Task {
-    private Integer taskNo;
 
-    private String taskName;
+  private Integer taskNo;
 
-    private String tno;
+  private String taskName;
 
-    private String taskContent;
+  private String tno;
 
-    private Boolean submit;
+  private String taskContent;
 
-    private Date startTime;
+  private Boolean submit;
 
-    private Date endTime;
+  private Date startTime;
 
-    private Date createTime;
+  private Date endTime;
 
-    public Integer getTaskNo() {
-        return taskNo;
-    }
+  private Date createTime;
 
-    public void setTaskNo(Integer taskNo) {
-        this.taskNo = taskNo;
-    }
+  public Integer getTaskNo() {
+    return taskNo;
+  }
 
-    public String getTaskName() {
-        return taskName;
-    }
+  public void setTaskNo(Integer taskNo) {
+    this.taskNo = taskNo;
+  }
 
-    public void setTaskName(String taskName) {
-        this.taskName = taskName == null ? null : taskName.trim();
-    }
+  public String getTaskName() {
+    return taskName;
+  }
 
-    public String getTno() {
-        return tno;
-    }
+  public void setTaskName(String taskName) {
+    this.taskName = taskName == null ? null : taskName.trim();
+  }
 
-    public void setTno(String tno) {
-        this.tno = tno == null ? null : tno.trim();
-    }
+  public String getTno() {
+    return tno;
+  }
 
-    public String getTaskContent() {
-        return taskContent;
-    }
+  public void setTno(String tno) {
+    this.tno = tno == null ? null : tno.trim();
+  }
 
-    public void setTaskContent(String taskContent) {
-        this.taskContent = taskContent == null ? null : taskContent.trim();
-    }
+  public String getTaskContent() {
+    return taskContent;
+  }
 
-    public Boolean getSubmit() {
-        return submit;
-    }
+  public void setTaskContent(String taskContent) {
+    this.taskContent = taskContent == null ? null : taskContent.trim();
+  }
 
-    public void setSubmit(Boolean submit) {
-        this.submit = submit;
-    }
+  public Boolean getSubmit() {
+    return submit;
+  }
 
-    public Date getStartTime() {
-        return startTime;
-    }
+  public void setSubmit(Boolean submit) {
+    this.submit = submit;
+  }
 
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
-    }
+  public Date getStartTime() {
+    return startTime;
+  }
 
-    public Date getEndTime() {
-        return endTime;
-    }
+  public void setStartTime(Date startTime) {
+    this.startTime = startTime;
+  }
 
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
-    }
+  public Date getEndTime() {
+    return endTime;
+  }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
+  public void setEndTime(Date endTime) {
+    this.endTime = endTime;
+  }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
+  public Date getCreateTime() {
+    return createTime;
+  }
+
+  public void setCreateTime(Date createTime) {
+    this.createTime = createTime;
+  }
 }

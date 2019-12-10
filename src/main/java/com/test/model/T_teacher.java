@@ -1,63 +1,64 @@
 package com.test.model;
 
 public class T_teacher {
-    private String tno;
 
-    private String psd;
+  private String tno;
 
-    private String name;
+  private String psd;
 
-    private String phone;
+  private String name;
 
-    private String qq;
+  private String phone;
 
-    private String profession;
+  private String qq;
 
-    public String getTno() {
-        return tno;
-    }
+  private String profession;
 
-    public void setTno(String tno) {
-        this.tno = tno == null ? null : tno.trim();
-    }
+  public String getTno() {
+    return tno;
+  }
 
-    public String getPsd() {
-        return psd;
-    }
+  public void setTno(String tno) {
+    this.tno = tno == null ? null : tno.trim();
+  }
 
-    public void setPsd(String psd) {
-        this.psd = psd == null ? null : psd.trim();
-    }
+  public String getPsd() {
+    return psd;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public void setPsd(String psd) {
+    this.psd = psd == null ? null : psd.trim();
+  }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getPhone() {
-        return phone;
-    }
+  public void setName(String name) {
+    this.name = name == null ? null : name.trim();
+  }
 
-    public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
-    }
+  public String getPhone() {
+    return phone;
+  }
 
-    public String getQq() {
-        return qq;
-    }
+  public void setPhone(String phone) {
+    this.phone = phone == null ? null : phone.trim();
+  }
 
-    public void setQq(String qq) {
-        this.qq = qq == null ? null : qq.trim();
-    }
+  public String getQq() {
+    return qq;
+  }
 
-    public String getProfession() {
-        return profession;
-    }
+  public void setQq(String qq) {
+    this.qq = qq == null ? null : qq.trim();
+  }
 
-    public void setProfession(String profession) {
-        this.profession = profession == null ? null : profession.trim();
-    }
+  public String getProfession() {
+    return profession;
+  }
+
+  public void setProfession(String profession) {
+    this.profession = profession == null ? null : profession.trim();
+  }
 }

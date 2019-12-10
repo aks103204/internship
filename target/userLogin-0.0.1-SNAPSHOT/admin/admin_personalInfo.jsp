@@ -92,7 +92,7 @@
     </div>
 
     <ul class="nav">
-        <li><a href=""><img src="../images/icon02.png" title="教师管理"/>
+        <li><a href="teacher_management/teacher_mana_index.jsp"><img src="../images/icon02.png" title="教师管理"/>
             <h2>教师管理</h2></a></li>
         <li><a href=""><img src="../images/icon03.png" title="学生管理"/>
             <h2>学生管理</h2></a></li>

@@ -40,37 +40,56 @@
                 $(this).next('ul').slideDown();
             }
         });
+
         $("#submit1").click(function(){
+
             var type = $("input[name=type]:checked").val();
-            var file = document.getElementById("peopleFiletext");
-            if (file.value == "") {
+            var file = document.getElementById("file").files[0];
+            if (file == null) {
                 alert("请选择您需要上传的文件！");
-            }//获得上传文件
-            var form = new FormData();//初始化formDate对象
-            //将两个变量通过append方法添加到formdata中，append方法中的第一个参数必须与后端请求的一致，第二个参数就是我们获取到的值
-            form.append("type",type);
-            form.append("file",file);
+            }
+            var fileform = new FormData();
+            fileform.append("file", file);
+            fileform.append("type", type);
             var ADMIN_UPDATE_INFO_URL="http://localhost:8080/admin/admin_Insert_Info/";
             $.ajax({
                 contentType: "application/json",
                 url :ADMIN_UPDATE_INFO_URL ,
                 dataType: "text json",
                 type : "POST",
-                data : form,
-                async : true,
-                cache : false,
-                contentType : false,
-                processData : false,
-                success : function(data) {
-                    alert(data)
+                data : fileform,
+                processData: false,//用于对data参数进行序列化处理 这里必须false
+                contentType: false, //必须
+                statusCode:{
+                200 : function(data) {
+                    alert("文件上传成功，信息已经插入！")
+                    window.location="bulkInsert.jsp";
                 },
                 404:function(){
-                    alert("文件上传失败，请重新上传！");
+                    alert(data.val(str));
                     window.location="bulkInsert.jsp";
+                    }
                 }
             });
         });
     })
+
+    function showfile() {
+        var obj=document.getElementById("file");
+        var len=obj.files.length;
+        var fileName="";
+        for (var i=0;i<len;i++){
+            var filePath=obj.files[i].name;
+            var temp=filePath.substring(filePath.lastIndexOf("\\")+1);
+            if(i==0){
+                fileName=temp;
+            }else{
+                fileName=fileName+","+temp;
+            }
+        }
+        document.getElementById("peopleFiletext").value=fileName;
+
+    }
     var getCookie = function (name) {
         //获取当前所有cookie
         var strCookies = document.cookie;
@@ -87,33 +106,6 @@
         }
         return null;
     }
-    $("#submit1").click(function(){
-        alert(111);
-        var type = $("input[name=type]:checked").val();
-        var file = $("#file")[0].files[0];//获得上传文件
-        var form = new FormData();//初始化formDate对象
-        //将两个变量通过append方法添加到formdata中，append方法中的第一个参数必须与后端请求的一致，第二个参数就是我们获取到的值
-        form.append("type",type);
-        form.append("file",file);
-        alert(222);
-        var ADMIN_UPDATE_INFO_URL="http://localhost:8080/admin/admin_Insert_Info/";
-        $.ajax({
-            type : "POST",
-            url :ADMIN_UPDATE_INFO_URL ,
-            data : form,
-            async : true,
-            cache : false,
-            contentType : false,
-            processData : false,
-            success : function(data) {
-                alert(data)
-            },
-            404:function(){
-                alert("文件上传失败，请重新上传！");
-                window.location="bulkInsert.jsp";
-            }
-        });
-    })
 </script>
 <body style="background:url(../images/topbg.gif) repeat-x;">
 <div class="top">
@@ -122,7 +114,7 @@
     </div>
 
     <ul class="nav">
-        <li><a href="/teacher_mana_indexServlet" class="selected"><img src="../images/icon02.png" title="教师管理"/>
+        <li><a href="teacher_management/teacher_mana_index.jsp" class="selected"><img src="../images/icon02.png" title="教师管理"/>
             <h2>教师管理</h2></a></li>
         <li><a href="/student_manage"><img src="../images/icon03.png" title="学生管理"/>
             <h2>学生管理</h2></a></li>
@@ -178,23 +170,6 @@
             </p>
         </form>
     </div>
-    <script type="text/javascript">
-        function showfile() {
-            var obj=document.getElementById("file");
-            var len=obj.files.length;
-            var fileName="";
-            for (var i=0;i<len;i++){
-                var path=obj.files[i].name;
-                var temp=path.substring(path.lastIndexOf("\\")+1);
-                if(i==0){
-                    fileName=temp;
-                }else{
-                    fileName=fileName+","+temp;
-                }
-            }
-            document.getElementById("peopleFiletext").value=fileName;
-        }
-    </script>
 </div>
 </body>
 </html>

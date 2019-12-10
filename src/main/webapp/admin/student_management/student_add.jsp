@@ -1,19 +1,12 @@
-<%@ page import="javaBean.Student" %>
-<%@ page import="java.util.List" %><%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2019/1/7
-  Time: 16:10
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>添加新学生界面</title>
     <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
-    <script language="JavaScript" src="../../JS/jquery.js"></script>
-</head>
+    <script type="text/javascript" src="../../JS/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../../JS/jquery.cookie.js"></script>
+
 <script type="text/javascript">
     $(function () {
         //顶部导航切换
@@ -21,6 +14,11 @@
             $(".nav li a.selected").removeClass("selected");
             $(this).addClass("selected");
         })
+      if(getCookie("ano")==null){
+        $("#span1").html("游客");
+      }else{
+        $("#span1").html(getCookie("ano"));
+      }
     })
 </script>
 <script type="text/javascript">
@@ -41,6 +39,47 @@
             }
         });
     })
+    var getCookie = function (name) {
+      //获取当前所有cookie
+      var strCookies = document.cookie;
+      //截取变成cookie数组
+      var array = strCookies.split(';');
+      //循环每个cookie
+      for (var i = 0; i < array.length; i++) {
+        //将cookie截取成两部分
+        var item = array[i].split("=");
+        //判断cookie的name 是否相等
+        if (item[0] == name) {
+          return item[1];
+        }
+      }
+      return null;
+    }
+    function student_Add_Info(){
+      var sno=$("#sno").val();
+      var cno=$("#cno").val();
+      var password=$("#password").val();
+      var name=$("#name").val();
+      var phone=$("#phone").val();
+      var qq=$("#qq").val();
+      var TEACHER_INFO_ADD_URL="http://localhost:8080/admin/student_Add_Info/"+sno+"/"+cno+"/"+password+"/"+name+"/"+phone+"/"+qq;
+      $.ajax({
+        contentType: "application/json",
+        url:TEACHER_INFO_ADD_URL,
+        dataType: "text json",
+        type:"post",
+        statusCode:{
+          200:function(data){
+            alert("信息插入成功！")
+            window.location="student_mana_index.jsp";
+          },
+          404:function(){
+            alert("信息插入失败！");
+            window.location="student_add.jsp";
+          }
+        }
+      });
+    }
 </script>
 <style>
     .per-input{
@@ -50,6 +89,7 @@
         float:left;width: 80px;height: 30px;padding-top: 10px;font-size: 20px;
     }
 </style>
+</head>
 <body style="background:url('../../images/topbg.gif') repeat-x;">
 <div class="top">
     <div class="topleft">
@@ -57,11 +97,11 @@
     </div>
 
     <ul class="nav">
-        <li><a href="/teacher_mana_indexServlet" ><img src="../../images/icon02.png" title="教师管理"/>
+        <li><a href="../teacher_management/teacher_mana_index.jsp" ><img src="../../images/icon02.png" title="教师管理"/>
             <h2>教师管理</h2></a></li>
-        <li><a href="/student_manage" class="selected"><img src="../../images/icon03.png" title="学生管理"/>
+        <li><a href="../student_management/student_mana_index.jsp" class="selected"><img src="../../images/icon03.png" title="学生管理"/>
             <h2>学生管理</h2></a></li>
-        <li><a href="/class_management_indexServlet" ><img src="../../images/icon01.png" title="班级管理"/>
+        <li><a href="../class_management/class_mana_index.jsp" ><img src="../../images/icon01.png" title="班级管理"/>
             <h2>班级管理</h2></a></li>
     </ul>
 
@@ -72,7 +112,7 @@
             <li><a href="/logout">退出</a></li>
         </ul>
         <div class="user">
-            <span>${admin_no}</span>
+            <span id="span1"></span>
         </div>
     </div>
 </div>
@@ -86,7 +126,7 @@
                 <span><img src="../../images/leftico01.png"/></span>管理信息
             </div>
             <ul class="menuson">
-                <li class="active"><cite></cite><a href="/admin/student/addStudentInfo.jsp">增加学生</a><i></i></li>
+                <li class="active"><cite></cite><a href="student_add.jsp">增加学生</a><i></i></li>
             </ul>
         </dd>
     </dl>
@@ -96,34 +136,34 @@
         <div style="width: 60%;overflow: hidden;margin: 0 auto;">
             <div style="font-size: 30px;color: #000;text-align: center;padding-top: 20px;padding-right: 75px;">添加学生信息</div>
             <div style="color: #000;text-align: center;padding-top: 20px;">
-                <form method="get" action="/addStudent_servlet" name="myForm1">
+                <form>
                     <div style="width:130%;float: left;">
                         <div class="per-text">学号：</div>
-                        <div><input class="per-input" name="sno"  type="text"/></div>
-                        <div style="padding-top: 10px;color: red;float:left;font-size: 18px;width: 150px;height: 50px;">${addStudentSnoErrorMessage}</div>
+                        <div><input class="per-input" id="sno"  type="text"/></div>
+                    </div>
+                    <div style="width:130%;float: left;">
+                        <div class="per-text">班级：</div>
+                        <div><input class="per-input" id="cno"  type="text"/></div>
                     </div>
                     <div style="width:130%;float: left;">
                         <div class="per-text">密码：</div>
-                        <div><input class="per-input" name="password"  type="text"/></div>
-                        <div style="padding-top: 14px;color: red;float:left;font-size: 18px;width: 150px;height: 50px;">${addStudentPasswordMessage}</div>
+                        <div><input class="per-input" id="password"  type="text"/></div>
                     </div>
                     <div style="width:130%;float: left;">
                         <div class="per-text">姓名：</div>
-                        <div><input class="per-input" name="name" type="text"/></div>
-                        <div style="padding-top: 10px;color: red;float:left;font-size: 18px;width: 150px;height: 50px;">${addStudentNameErrorMessage}</div>
+                        <div><input class="per-input" id="name" type="text"/></div>
                     </div>
                     <div style="width:130%;float: left;">
                         <div class="per-text">电话：</div>
-                        <div><input class="per-input" name="phone"  type="text"/></div>
-                        <div style="padding-top: 11px;color: red;float:left;font-size: 18px;width: 150px;height: 50px;">${addStudentPhoneErrorMessage}</div>
+                        <div><input class="per-input" id="phone"  type="text"/></div>
                     </div>
                     <div style="width:130%;float: left;">
                         <div class="per-text">Q Q：</div>
-                        <div><input class="per-input" name="qq"  type="text"/></div>
+                        <div><input class="per-input" id="qq"  type="text"/></div>
                     </div>
 
                     <div style="padding-left: 30%;width:60%;float: left;font-size: 20px;">
-                        <a style="font-size: 20px; background: #fff;" href="javascript:void(0)" onclick="myForm1.submit()">添加</a>
+                        <a style="font-size: 20px; background: #fff;" href="javascript:void(0)" onclick="student_Add_Info()">添加</a>
                     </div>
 
                 </form>

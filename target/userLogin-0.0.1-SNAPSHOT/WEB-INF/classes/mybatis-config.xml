@@ -11,6 +11,9 @@
 
 
 <configuration>
+    <settings>
+        <setting name="defaultExecutorType" value="SIMPLE" />
+    </settings>
 
     <environments default="development">
 
@@ -36,6 +39,6 @@
     </environments>
 
     <!--<mappers>-->
-        <!--<mapper resource="com/test/mapper/UserMapper.xml"></mapper>-->
+    <!--<mapper resource="com/test/mapper/UserMapper.xml"></mapper>-->
     <!--</mappers>-->
 </configuration>

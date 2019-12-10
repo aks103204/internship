@@ -1,63 +1,64 @@
 package com.test.model;
 
 public class T_student {
-    private String sno;
 
-    private String cno;
+  private String sno;
 
-    private String psd;
+  private String cno;
 
-    private String name;
+  private String psd;
 
-    private String phone;
+  private String name;
 
-    private String qq;
+  private String phone;
 
-    public String getSno() {
-        return sno;
-    }
+  private String qq;
 
-    public void setSno(String sno) {
-        this.sno = sno == null ? null : sno.trim();
-    }
+  public String getSno() {
+    return sno;
+  }
 
-    public String getCno() {
-        return cno;
-    }
+  public void setSno(String sno) {
+    this.sno = sno == null ? null : sno.trim();
+  }
 
-    public void setCno(String cno) {
-        this.cno = cno == null ? null : cno.trim();
-    }
+  public String getCno() {
+    return cno;
+  }
 
-    public String getPsd() {
-        return psd;
-    }
+  public void setCno(String cno) {
+    this.cno = cno == null ? null : cno.trim();
+  }
 
-    public void setPsd(String psd) {
-        this.psd = psd == null ? null : psd.trim();
-    }
+  public String getPsd() {
+    return psd;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public void setPsd(String psd) {
+    this.psd = psd == null ? null : psd.trim();
+  }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getPhone() {
-        return phone;
-    }
+  public void setName(String name) {
+    this.name = name == null ? null : name.trim();
+  }
 
-    public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
-    }
+  public String getPhone() {
+    return phone;
+  }
 
-    public String getQq() {
-        return qq;
-    }
+  public void setPhone(String phone) {
+    this.phone = phone == null ? null : phone.trim();
+  }
 
-    public void setQq(String qq) {
-        this.qq = qq == null ? null : qq.trim();
-    }
+  public String getQq() {
+    return qq;
+  }
+
+  public void setQq(String qq) {
+    this.qq = qq == null ? null : qq.trim();
+  }
 }

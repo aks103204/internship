@@ -157,6 +157,9 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+  <select id="queryAllTeacherInfo"  resultType="com.test.model.T_teacher">
+    select * from t_teacher
+  </select>
   <update id="updateByExampleSelective" parameterType="map" >
     update t_teacher
     <set >

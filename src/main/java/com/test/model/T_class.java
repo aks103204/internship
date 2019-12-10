@@ -1,33 +1,34 @@
 package com.test.model;
 
 public class T_class {
-    private String cno;
 
-    private String profession;
+  private String cno;
 
-    private Integer totalperson;
+  private String profession;
 
-    public String getCno() {
-        return cno;
-    }
+  private Integer totalperson;
 
-    public void setCno(String cno) {
-        this.cno = cno == null ? null : cno.trim();
-    }
+  public String getCno() {
+    return cno;
+  }
 
-    public String getProfession() {
-        return profession;
-    }
+  public void setCno(String cno) {
+    this.cno = cno == null ? null : cno.trim();
+  }
 
-    public void setProfession(String profession) {
-        this.profession = profession == null ? null : profession.trim();
-    }
+  public String getProfession() {
+    return profession;
+  }
 
-    public Integer getTotalperson() {
-        return totalperson;
-    }
+  public void setProfession(String profession) {
+    this.profession = profession == null ? null : profession.trim();
+  }
 
-    public void setTotalperson(Integer totalperson) {
-        this.totalperson = totalperson;
-    }
+  public Integer getTotalperson() {
+    return totalperson;
+  }
+
+  public void setTotalperson(Integer totalperson) {
+    this.totalperson = totalperson;
+  }
 }

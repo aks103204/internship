@@ -1,73 +1,75 @@
 package com.test.model;
 
 public class T_admin {
-    private String ano;
 
-    private String psd;
+  private String ano;
 
-    private String name;
+  private String psd;
 
-    private String phone;
+  private String name;
 
-    private String qq;
+  private String phone;
 
-    public T_admin() {
-    }
-    public T_admin(String ano,String psd){
-        this.ano=ano;
-        this.psd=psd;
-    }
+  private String qq;
 
-    public T_admin(String name, String phone, String qq) {
-        this.name=name;
-        this.phone=phone;
-        this.qq=qq;
-    }
+  public T_admin() {
+  }
 
-    public T_admin(String ano, String name, String phone, String qq) {
-        this.ano=ano;
-        this.name=name;
-        this.phone=phone;
-        this.qq=qq;
-    }
+  public T_admin(String ano, String psd) {
+    this.ano = ano;
+    this.psd = psd;
+  }
 
-    public String getAno() {
-        return ano;
-    }
+  public T_admin(String name, String phone, String qq) {
+    this.name = name;
+    this.phone = phone;
+    this.qq = qq;
+  }
 
-    public void setAno(String ano) {
-        this.ano = ano == null ? null : ano.trim();
-    }
+  public T_admin(String ano, String name, String phone, String qq) {
+    this.ano = ano;
+    this.name = name;
+    this.phone = phone;
+    this.qq = qq;
+  }
 
-    public String getPsd() {
-        return psd;
-    }
+  public String getAno() {
+    return ano;
+  }
 
-    public void setPsd(String psd) {
-        this.psd = psd == null ? null : psd.trim();
-    }
+  public void setAno(String ano) {
+    this.ano = ano == null ? null : ano.trim();
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getPsd() {
+    return psd;
+  }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
+  public void setPsd(String psd) {
+    this.psd = psd == null ? null : psd.trim();
+  }
 
-    public String getPhone() {
-        return phone;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
-    }
+  public void setName(String name) {
+    this.name = name == null ? null : name.trim();
+  }
 
-    public String getQq() {
-        return qq;
-    }
+  public String getPhone() {
+    return phone;
+  }
 
-    public void setQq(String qq) {
-        this.qq = qq == null ? null : qq.trim();
-    }
+  public void setPhone(String phone) {
+    this.phone = phone == null ? null : phone.trim();
+  }
+
+  public String getQq() {
+    return qq;
+  }
+
+  public void setQq(String qq) {
+    this.qq = qq == null ? null : qq.trim();
+  }
 }

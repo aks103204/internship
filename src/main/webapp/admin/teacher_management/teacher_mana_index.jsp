@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <title>main</title>
     <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
-    <script language="JavaScript" src="../../JS/jquery.js"></script>
-</head>
+    <script type="text/javascript" src="../../JS/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../../JS/jquery.cookie.js"></script>
+
 <script type="text/javascript">
     $(function () {
         //顶部导航切换
@@ -15,10 +16,16 @@
             $(".nav li a.selected").removeClass("selected");
             $(this).addClass("selected");
         })
+        if(getCookie("ano")==null){
+            $("#span1").html("游客");
+        }else{
+            $("#span1").html(getCookie("ano"));
+        }
     })
 </script>
 <script type="text/javascript">
     $(function () {
+        $("#bold").css("font-weight","bold");$("#bold").css("font-weight","bold");
         //导航切换
         $(".menuson li").click(function () {
             $(".menuson li.active").removeClass("active");
@@ -35,7 +42,58 @@
             }
         });
     })
+
+    var getCookie = function (name) {
+        //获取当前所有cookie
+        var strCookies = document.cookie;
+        //截取变成cookie数组
+        var array = strCookies.split(';');
+        //循环每个cookie
+        for (var i = 0; i < array.length; i++) {
+            //将cookie截取成两部分
+            var item = array[i].split("=");
+            //判断cookie的name 是否相等
+            if (item[0] == name) {
+                return item[1];
+            }
+        }
+        return null;
+    }
+
+    $(function () {
+        var TEACHER_INFO_URL="http://localhost:8080/admin/teacher_Info";
+        $.ajax({
+            contentType: "application/json",
+            url:TEACHER_INFO_URL,
+            dataType: "text json",
+            type:"post",
+            statusCode:{
+                200:function(data){
+                    var str="";
+                    $(data).each(function (index, value) {
+                        str += "<tr><td width='200' class='main'>" + value.tno + "</td>" +
+                                    "<td width='200'>" + value.name + "</td>" +
+                                    "<td width='200'>" + value.phone + "</td>" +
+                                    "<td width='200'>" + value.qq + "</td>" +
+                                    "<td width='200'>" + value.profession+"</td>"+
+                                    "<td>"+
+                                    "<input type='button'  onclick='edit("+value.tno+")' value='操作'/>"+
+                                    "</td></tr>";
+                    });
+                    $("#msg").append(str);
+                },
+                404:function(){
+                    alert("获取信息失败！");
+                    window.location="index.jsp";
+                }
+            }
+        });
+    });
+    function edit(tno) {
+        window.location="teacher_info.jsp?tno="+tno;
+    }
 </script>
+</head>
 <body style="background:url(../../images/topbg.gif) repeat-x;">
 <div class="top">
     <div class="topleft">
@@ -43,11 +101,11 @@
     </div>
 
     <ul class="nav">
-        <li><a href="/teacher_mana_indexServlet" class="selected"><img src="../../images/icon02.png" title="教师管理"/>
+        <li><a href="../teacher_management/teacher_mana_index.jsp" class="selected"><img src="../../images/icon02.png" title="教师管理"/>
             <h2>教师管理</h2></a></li>
-        <li><a href="/student_manage"><img src="../../images/icon03.png" title="学生管理"/>
+        <li><a href="../student_management/student_mana_index.jsp"><img src="../../images/icon03.png" title="学生管理"/>
             <h2>学生管理</h2></a></li>
-        <li><a href="/class_management_indexServlet"><img src="../../images/icon01.png" title="班级管理"/>
+        <li><a href="../class_management/class_mana_index.jsp"><img src="../../images/icon01.png" title="班级管理"/>
             <h2>班级管理</h2></a></li>
     </ul>
 
@@ -58,7 +116,7 @@
             <li><a href="/logout" target="_parent">退出</a></li>
         </ul>
         <div class="user">
-            <span>${admin_no}</span>
+            <span id="span1"></span>
         </div>
     </div>
 </div>
@@ -72,76 +130,30 @@
                 <span><img src="../../images/leftico01.png"/></span>管理信息
             </div>
             <ul class="menuson">
-                <li class="active"><cite></cite><a href="/teacher_mana_indexServlet">教师管理首页</a><i></i></li>
-                <li><cite></cite><a href="/admin/teacher_management/teacher_add.jsp">添加教师信息</a><i></i></li>
+                <li class="active"><cite></cite><a href="teacher_mana_index.jsp">教师管理首页</a><i></i></li>
+                <li><cite></cite><a href="teacher_add.jsp">添加教师信息</a><i></i></li>
 
             </ul>
         </dd>
     </dl>
 
     <div class="main">
-        <c:if test="${not empty msg}">
-            <div style="padding-left: 187px;width: 50%;overflow: hidden;margin: 0 auto;color: #aa0000">${msg}</div>
-        </c:if>
-        <div style="padding-left: 187px;width: 50%;overflow: hidden;margin: 0 auto;">
+        <div style="padding-left: 187px;width: 50%;margin: 0 auto;">
             <div style="height:40px;line-height:40px;">
                 <div style="color: #000;text-align: center;">
-                    <div style="width: 10.5%;float: left;">id</div>
-                    <div style="width: 10.5%;float: left;">名字</div>
-                    <div style="width: 15.5%;float: left;">联系电话</div>
-                    <div style="width: 15.5%;float: left;">专业</div>
-                    <div style="float: left;width: 5.5%;">|</div>
-                    <div style="width: 10.5%;float: left;">操作</div>
-                </div><br>
-            </div>
-            <c:if test="${not empty teacherList}">
-                <c:forEach items="${teacherList}" var="teacher">
-                    <div style="height:40px;line-height:40px;">
-                        <div style="color: #000;text-align: center;">
-                            <div style="width: 10.5%;float: left;font-size:15px;">${teacher.getId()}</div>
-                            <div style="width: 10.5%;float: left;font-size:15px;">${teacher.getName()}</div>
-                            <div style="width: 15.5%;float: left;font-size:15px;">${teacher.getPhone()}</div>
-                            <div style="width: 15.5%;float: left;font-size:15px;">${teacher.getProfession()}</div>
-                            <div style="float: left;width: 5.5%;font-size:15px;">|</div>
-                            <div style="width: 10.5%;float: left;font-size:15px;"><a style="color: #a00;" href="/teacher_detailServlet?tno=${teacher.getId()}">详情</a></div>
-                        </div><br>
-                    </div>
-                </c:forEach>
-            </c:if>
-        </div>
-
-        <!-- 动态生成页面跳转标签 -->
-        <div style="padding-left:187px;width: 76%;overflow: hidden;margin: 0 auto;border: 1px solid #000;position: absolute;top: 88.5%;background-color: #3cc3f6;color: #fff;">
-            <div style="height:30px;line-height:30px;">
-                <div style="padding-left: 21.5%;height:30px;line-height:30px;width: 80px;float: left;"><%="第 "%>${current_page}<%=" 页"%></div>
-                <div style="height:30px;line-height:30px;width: 80px;float: left;"><%="共 "%>${page_num}<%=" 页"%></div>
-                <div style="float: left">
-                    <a style="padding-left: 40px;" href="/teacher_mana_indexServlet?current_page=${1}">首页</a>
-                    <a style="padding-left: 10px;padding-right: 10px;" href="/teacher_mana_indexServlet?current_page=${current_page>1 ? current_page-1:1}"><%="上一页 "%></a>
-                    <c:forEach step="1" begin="1" end="${page_num}"  varStatus="status">
-                        <c:if test="${status.current==current_page}">
-                            <a style="color:#a00" href="/teacher_mana_indexServlet?current_page=${status.current}"><%=" "%>${status.current}<%=" "%></a>
-                        </c:if>
-                        <c:if test="${status.current!=current_page}">
-                            <a href="/teacher_mana_indexServlet?current_page=${status.current}}"><%=" "%>${status.current}<%=" "%></a>
-                        </c:if>
-                    </c:forEach>
-                    <a style="padding-left: 10px;padding-right: 10px;"  href="/teacher_mana_indexServlet?current_page=${current_page<page_num ? current_page+1:page_num}"><%=" 下一页"%></a>
-                    <a  href="/teacher_mana_indexServlet?current_page=${page_num}">尾页</a>
+                    <table id="msg">
+                          <tbody>
+                                 <tr id="bold">
+                                    <td width="200" id="id"  >id</td>
+                                    <td width="200" id="name">姓名</td>
+                                    <td width="200" id="phone">手机号</td>
+                                    <td width="200" id="qq">QQ</td>
+                                    <td width="200" id="profession">专业</td>
+                                    <td width="80" colspan="2">操作</td>
+                                 </tr>
+                           </tbody>
+                    </table>
                 </div>
-                <div style="height:30px;line-height:30px;width: 120px;float: left;padding-left: 50px;">
-                    <div style="float: left;"><%="到"%></div>
-                    <div style="float: left;padding-right: 10px;"><%="第"%></div>
-                    <div style="float: left;">
-                        <form style="padding-top: 2.5px;line-height:30px;height: 25px;width: 25px;float:left" action="/teacher_mana_indexServlet" method="post" name="form1">
-                            <input type="text" name="current_page" style="border:1px solid #000;line-height:30px;height: 25px;width: 25px;text-align: center">
-                        </form>
-                    </div>
-                    <div style="float: left;padding-right: 10px;padding-left: 10px;"><%="  页"%></div>
-                    <a style="border: 1px solid #fcf5f5" href="javascript:void(0)" onclick="form1.submit()">确定</a>
-                </div>
-
-
             </div>
         </div>
     </div>

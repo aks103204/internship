@@ -6,25 +6,27 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface T_classMapper {
-    int countByExample(T_classExample example);
 
-    int deleteByExample(T_classExample example);
+  int countByExample(T_classExample example);
 
-    int deleteByPrimaryKey(String cno);
+  int deleteByExample(T_classExample example);
 
-    int insert(T_class record);
+  int deleteByPrimaryKey(String cno);
 
-    int insertSelective(T_class record);
+  int insert(T_class record);
 
-    List<T_class> selectByExample(T_classExample example);
+  int insertSelective(T_class record);
 
-    T_class selectByPrimaryKey(String cno);
+  List<T_class> selectByExample(T_classExample example);
 
-    int updateByExampleSelective(@Param("record") T_class record, @Param("example") T_classExample example);
+  T_class selectByPrimaryKey(String cno);
 
-    int updateByExample(@Param("record") T_class record, @Param("example") T_classExample example);
+  int updateByExampleSelective(@Param("record") T_class record,
+      @Param("example") T_classExample example);
 
-    int updateByPrimaryKeySelective(T_class record);
+  int updateByExample(@Param("record") T_class record, @Param("example") T_classExample example);
 
-    int updateByPrimaryKey(T_class record);
+  int updateByPrimaryKeySelective(T_class record);
+
+  int updateByPrimaryKey(T_class record);
 }
