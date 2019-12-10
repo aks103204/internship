@@ -10,94 +10,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fce3f86-5f4e-4bd0-b739-8ba13ab684d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TraMnaSys.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/Tool/InsertByExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/Tool/InsertByExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_adminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_adminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_fileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_fileMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_registrationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_registrationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_tcMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_tcMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_adminExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_adminExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_classExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_classExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_file.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_file.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_fileExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_fileExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_registrationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_registrationExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_studentExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_studentExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_tcExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_tcExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_tcKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_tcKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_teacherExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_teacherExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/TaskExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/TaskExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/server/AdminImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/server/AdminImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin_personalInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin_personalInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin_updateInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin_updateInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/bulkInsert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/bulkInsert.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/class/class_manage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_manage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/class/class_management_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_mana_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/class/student_List.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/class_management/student_List.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/student/addStudentInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/student/manageStudent_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/student/student_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/summary_graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/summary_graph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_mana_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_mana_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/Tool/InsertByExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/Tool/InsertByExcel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_studentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_studentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_studentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_studentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_teacherMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_teacherMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_teacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_teacherMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/server/AdminImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/server/AdminImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/Tool/InsertByExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/Tool/InsertByExcel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_studentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_studentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_studentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_studentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_teacherMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_teacherMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_teacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_teacherMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/server/AdminImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/server/AdminImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_personalInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_personalInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_updateInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_updateInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_updatePsd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_updatePsd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/bulkInsert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/bulkInsert.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/class/class_manage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/class/class_management_index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/class/student_List.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/student/addStudentInfo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/student/manageStudent_index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/student/student_info.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/summary_graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/summary_graph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_mana_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_mana_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_class.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_file.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_file.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_class.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_file.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_file.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -173,8 +166,9 @@
         <counts>
           <entry key="dummy" value="1" />
           <entry key="java" value="4074" />
-          <entry key="jsp" value="3533" />
+          <entry key="jsp" value="3534" />
           <entry key="properties" value="10" />
+          <entry key="txt" value="7" />
           <entry key="xml" value="120" />
         </counts>
       </usages-collector>
@@ -182,8 +176,8 @@
         <counts>
           <entry key="HTML" value="5" />
           <entry key="JAVA" value="4074" />
-          <entry key="JSP" value="3528" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JSP" value="3529" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="10" />
           <entry key="SQL" value="1" />
           <entry key="XML" value="119" />
@@ -220,8 +214,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+            <state relative-caret-position="196">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -516,11 +510,11 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/weishushu/IdeaPro/internship/src/main/webapp/admin/teacher_management/teacher_add.jsp" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575986088043" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575986325110" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -739,8 +733,16 @@
       <workItem from="1575939024997" duration="10316000" />
       <workItem from="1575953269551" duration="13780000" />
       <workItem from="1575971457290" duration="5581000" />
-      <workItem from="1575979837847" duration="6034000" />
+      <workItem from="1575979837847" duration="6453000" />
     </task>
+    <task id="LOCAL-00001" summary="实现自动分页前">
+      <created>1575986160344</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575986160344</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -776,11 +778,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114005000" />
+    <option name="totallyTimeSpent" value="114424000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49411765" visible="true" weight="0.24932976" />
       <window_info id="Structure" order="1" sideWeight="0.5058824" side_tool="true" weight="0.24597855" />
@@ -793,17 +803,17 @@
       <window_info anchor="bottom" id="Inspection Results" weight="0.32960895" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.40642458" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.40642458" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39385474" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32914925" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067025" side_tool="true" weight="0.47206703" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3282123" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3282123" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -823,6 +833,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="实现自动分页前" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现自动分页前" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -978,6 +992,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#1125#1126#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1196,8 +1213,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        <state relative-caret-position="196">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
