@@ -16,7 +16,8 @@
             $(this).addClass("selected");
         })
         if(getCookie("ano")==null){
-            $("#span1").html("游客");
+          alert("请先登陆后访问此网页！");
+          window.location="../../index.jsp"
         }else{
             $("#span1").html(getCookie("ano"));
         }
@@ -57,12 +58,23 @@
         }
         return null;
     }
-
+    var delCookie = function (name) {
+      var exp = new Date();
+      exp.setTime(exp.getTime() - 1);
+      //获取cookie是否存在
+      var value = getCookie(name);
+      if (value != null) {
+        document.cookie = name + "=" + escape("") + ";expires="+ exp.toUTCString()+ ";path=/";
+      }
+    }
+    function quit() {
+      delCookie("ano");
+    }
     $(function () {
-        var TEACHER_INFO_URL="http://localhost:8080/admin/student_Info";
+        var STUDENT_INFO_URL="http://localhost:8080/admin/student_Info";
         $.ajax({
             contentType: "application/json",
-            url:TEACHER_INFO_URL,
+            url:STUDENT_INFO_URL,
             dataType: "text json",
             type:"post",
             statusCode:{
@@ -71,8 +83,8 @@
                     $(data).each(function (index, value) {
                         str += "<tr><td width='200' class='main'>" + value.sno + "</td>"+
                                     "<td width='200'>" + value.cno   + "</td>" +
-                                    "<td width='200'>"  + value.name  + "</td>" +
-                                    "<td width='200'>" + value.phone + "</td>" +
+                                    "<td width='1000'>"  + value.sname  + "</td>" +
+                                    "<td width='200'>" + value.sphone + "</td>" +
                                     "<td width='200'>" + value.qq     + "</td>" +
                                     "<td>"+
                                     "<input type='button'  onclick='edit("+value.sno+")' value='操作'/>"+
@@ -82,7 +94,7 @@
                 },
                 404:function(){
                     alert("获取信息失败！");
-                    window.location="index.jsp";
+                    window.location="../admin_index.jsp";
                 }
             }
         });
@@ -90,6 +102,7 @@
     function edit(sno) {
         window.location="student_info.jsp?sno="+sno;
     }
+
 </script>
 
 </head>
@@ -112,7 +125,7 @@
         <ul>
             <li><span><img src="../../images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
             <li><a href="#">关于</a></li>
-            <li><a href="/logout">退出</a></li>
+            <li><a href="../../index.jsp" onclick="quit()">退出</a></li>
         </ul>
         <div class="user">
             <span id="span1"></span>
@@ -143,13 +156,44 @@
                         <tr id="bold">
                             <td width="200" id="sno"  >学号</td>
                             <td width="200" id="cno">班级</td>
-                            <td width="200" id="name">姓名</td>
+                            <td width="1000" id="name">姓名</td>
                             <td width="200" id="phone">手机号</td>
                             <td width="200" id="qq">QQ</td>
                             <td width="200" colspan="2">操作</td>
                         </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+        <div style="padding-left:187px;width: 76%;overflow: hidden;margin: 0 auto;border: 1px solid #000;position: absolute;top: 88.5%;background-color: #3cc3f6;color: #fff;">
+            <div style="height:30px;line-height:30px;">
+                <div style="padding-left: 21.3%;height:30px;line-height:30px;width: 80px;float: left;"><%="第 "%>${current_page}<%=" 页"%></div>
+                <div style="height:30px;line-height:30px;width: 80px;float: left;"><%="共 "%>${page_num}<%=" 页"%></div>
+                <div style="float: left">
+                    <a style="padding-left: 40px;" href="/class_management_indexServlet?current_page=${1}">首页</a>
+                    <a style="padding-left: 10px;padding-right: 10px;" href="/class_management_indexServlet?current_page=${current_page>1 ? current_page-1:1}"><%="上一页 "%></a>
+                    <c:forEach step="1" begin="1" end="${page_num}"  varStatus="status">
+                        <c:if test="${status.current==current_page}">
+                            <a style="color:#a00" href="/class_management_indexServlet?current_page=${status.current}"><%=" "%>${status.current}<%=" "%></a>
+                        </c:if>
+                        <c:if test="${status.current!=current_page}">
+                            <a href="/class_management_indexServlet?current_page=${status.current}}"><%=" "%>${status.current}<%=" "%></a>
+                        </c:if>
+                    </c:forEach>
+                    <a style="padding-left: 10px;padding-right: 10px;"  href="/class_management_indexServlet?current_page=${current_page<page_num ? current_page+1:page_num}"><%=" 下一页"%></a>
+                    <a  href="/class_management_indexServlet?current_page=${page_num}">尾页</a>
+                </div>
+                <div style="height:30px;line-height:30px;width: 120px;float: left;padding-left: 50px;">
+                    <div style="float: left;"><%="到"%></div>
+                    <div style="float: left;padding-right: 10px;"><%="第"%></div>
+                    <div style="float: left;">
+                        <form style="padding-top: 2.5px;line-height:30px;height: 25px;width: 25px;float:left" action="/class_management_indexServlet" method="post" name="form1">
+                            <input type="text" name="current_page" style="border:1px solid #000;line-height:30px;height: 25px;width: 25px;text-align: center">
+                        </form>
+                    </div>
+                    <div style="float: left;padding-right: 10px;padding-left: 10px;"><%="  页"%></div>
+                    <a style="border: 1px solid #fcf5f5" href="javascript:void(0)" onclick="form1.submit()">确定</a>
                 </div>
             </div>
         </div>

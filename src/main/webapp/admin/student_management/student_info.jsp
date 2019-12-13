@@ -16,7 +16,8 @@
             $(this).addClass("selected");
         })
       if(getCookie("ano")==null){
-        $("#span1").html("游客");
+        alert("请先登陆后访问此网页！");
+        window.location="../../index.jsp"
       }else{
         $("#span1").html(getCookie("ano"));
       }
@@ -39,6 +40,7 @@
                 $(this).next('ul').slideDown();
             }
         });
+    })
         var getCookie = function (name) {
             //获取当前所有cookie
             var strCookies = document.cookie;
@@ -55,13 +57,24 @@
             }
             return null;
         }
-
+      var delCookie = function (name) {
+        var exp = new Date();
+        exp.setTime(exp.getTime() - 1);
+        //获取cookie是否存在
+        var value = getCookie(name);
+        if (value != null) {
+          document.cookie = name + "=" + escape("") + ";expires="+ exp.toUTCString()+ ";path=/";
+        }
+      }
+      function quit() {
+        delCookie("ano");
+      }
         $(function () {
             var sno=<%=request.getParameter("sno")%>;
-            var STUDENT_INFOBYTNO_URL="http://localhost:8080/admin/student_InfoById/"+sno;
+            var STUDENT_INFOBYSNO_URL="http://localhost:8080/admin/student_InfoById/"+sno;
             $.ajax({
                 contentType: "application/json",
-                url:STUDENT_INFOBYTNO_URL,
+                url:STUDENT_INFOBYSNO_URL,
                 dataType: "text json",
                 type:"post",
                 statusCode:{
@@ -69,9 +82,9 @@
                         $(data).each(function(i,value){
                             document.getElementById('sno').value=value.sno;
                             document.getElementById('cno').value=value.cno;
-                            document.getElementById('password').value=value.psd;
-                            document.getElementById('name').value=value.name;
-                            document.getElementById('phone').value=value.phone;
+                            document.getElementById('password').value=value.spsd;
+                            document.getElementById('name').value=value.sname;
+                            document.getElementById('phone').value=value.sphone;
                             document.getElementById('qq').value=value.qq;
                         });
                     },
@@ -81,9 +94,6 @@
                 }
             });
         });
-
-    })
-
     function student_Delete_Info(){
       var delCon=confirm("确认删除吗？")
       if(!delCon){
@@ -153,7 +163,7 @@
         <ul>
             <li><span><img src="../../images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
             <li><a href="#">关于</a></li>
-            <li><a href="/logout">退出</a></li>
+            <li><a href="../../index.jsp" onclick="quit()">退出</a></li>
         </ul>
         <div class="user">
             <span id="span1"></span>

@@ -1,75 +1,53 @@
 package com.test.model;
 
 public class T_admin {
+    private String ano;
 
-  private String ano;
+    private String psd;
 
-  private String psd;
+    private String name;
 
-  private String name;
+    private String phone;
 
-  private String phone;
+    private String qq;
 
-  private String qq;
+    public String getAno() {
+        return ano;
+    }
 
-  public T_admin() {
-  }
+    public void setAno(String ano) {
+        this.ano = ano == null ? null : ano.trim();
+    }
 
-  public T_admin(String ano, String psd) {
-    this.ano = ano;
-    this.psd = psd;
-  }
+    public String getPsd() {
+        return psd;
+    }
 
-  public T_admin(String name, String phone, String qq) {
-    this.name = name;
-    this.phone = phone;
-    this.qq = qq;
-  }
+    public void setPsd(String psd) {
+        this.psd = psd == null ? null : psd.trim();
+    }
 
-  public T_admin(String ano, String name, String phone, String qq) {
-    this.ano = ano;
-    this.name = name;
-    this.phone = phone;
-    this.qq = qq;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public String getAno() {
-    return ano;
-  }
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
 
-  public void setAno(String ano) {
-    this.ano = ano == null ? null : ano.trim();
-  }
+    public String getPhone() {
+        return phone;
+    }
 
-  public String getPsd() {
-    return psd;
-  }
+    public void setPhone(String phone) {
+        this.phone = phone == null ? null : phone.trim();
+    }
 
-  public void setPsd(String psd) {
-    this.psd = psd == null ? null : psd.trim();
-  }
+    public String getQq() {
+        return qq;
+    }
 
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name == null ? null : name.trim();
-  }
-
-  public String getPhone() {
-    return phone;
-  }
-
-  public void setPhone(String phone) {
-    this.phone = phone == null ? null : phone.trim();
-  }
-
-  public String getQq() {
-    return qq;
-  }
-
-  public void setQq(String qq) {
-    this.qq = qq == null ? null : qq.trim();
-  }
+    public void setQq(String qq) {
+        this.qq = qq == null ? null : qq.trim();
+    }
 }

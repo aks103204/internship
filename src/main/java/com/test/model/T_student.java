@@ -1,64 +1,75 @@
 package com.test.model;
 
+import java.util.List;
+
 public class T_student {
+    private String sno;
 
-  private String sno;
+    private String cno;
 
-  private String cno;
+    private String spsd;
 
-  private String psd;
+    private String sname;
 
-  private String name;
+    private String sphone;
 
-  private String phone;
+    private String qq;
 
-  private String qq;
+    private List<T_teacher> teacherList;
 
-  public String getSno() {
-    return sno;
-  }
+    public List<T_teacher> getTeacherList() {
+        return teacherList;
+    }
 
-  public void setSno(String sno) {
-    this.sno = sno == null ? null : sno.trim();
-  }
+    public void setTeacherList(List<T_teacher> teacherList) {
+        this.teacherList = teacherList;
+    }
 
-  public String getCno() {
-    return cno;
-  }
+    public String getSno() {
+        return sno;
+    }
 
-  public void setCno(String cno) {
-    this.cno = cno == null ? null : cno.trim();
-  }
+    public void setSno(String sno) {
+        this.sno = sno == null ? null : sno.trim();
+    }
 
-  public String getPsd() {
-    return psd;
-  }
+    public String getCno() {
+        return cno;
+    }
 
-  public void setPsd(String psd) {
-    this.psd = psd == null ? null : psd.trim();
-  }
+    public void setCno(String cno) {
+        this.cno = cno == null ? null : cno.trim();
+    }
 
-  public String getName() {
-    return name;
-  }
+    public String getSpsd() {
+        return spsd;
+    }
 
-  public void setName(String name) {
-    this.name = name == null ? null : name.trim();
-  }
+    public void setSpsd(String spsd) {
+        this.spsd = spsd == null ? null : spsd.trim();
+    }
 
-  public String getPhone() {
-    return phone;
-  }
+    public String getSname() {
+        return sname;
+    }
 
-  public void setPhone(String phone) {
-    this.phone = phone == null ? null : phone.trim();
-  }
+    public void setSname(String sname) {
+        this.sname = sname == null ? null : sname.trim();
+    }
 
-  public String getQq() {
-    return qq;
-  }
+    public String getSphone() {
+        return sphone;
+    }
 
-  public void setQq(String qq) {
-    this.qq = qq == null ? null : qq.trim();
-  }
+    public void setSphone(String sphone) {
+        this.sphone = sphone == null ? null : sphone.trim();
+    }
+
+    public String getQq() {
+        return qq;
+    }
+
+    public void setQq(String qq) {
+        this.qq = qq == null ? null : qq.trim();
+    }
 }

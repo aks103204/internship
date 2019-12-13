@@ -1,64 +1,74 @@
 package com.test.model;
 
+import java.util.List;
+
 public class T_teacher {
+    private String tno;
 
-  private String tno;
+    private String tpsd;
 
-  private String psd;
+    private String tname;
 
-  private String name;
+    private String tphone;
 
-  private String phone;
+    private String tqq;
 
-  private String qq;
+    private String tprofession;
 
-  private String profession;
+    private List<T_student> studentList;
 
-  public String getTno() {
-    return tno;
-  }
+    public List<T_student> getStudentList() {
+        return studentList;
+    }
 
-  public void setTno(String tno) {
-    this.tno = tno == null ? null : tno.trim();
-  }
+    public void setStudentList(List<T_student> studentList) {
+        this.studentList = studentList;
+    }
+    public String getTno() {
+        return tno;
+    }
 
-  public String getPsd() {
-    return psd;
-  }
+    public void setTno(String tno) {
+        this.tno = tno == null ? null : tno.trim();
+    }
 
-  public void setPsd(String psd) {
-    this.psd = psd == null ? null : psd.trim();
-  }
+    public String getTpsd() {
+        return tpsd;
+    }
 
-  public String getName() {
-    return name;
-  }
+    public void setTpsd(String tpsd) {
+        this.tpsd = tpsd == null ? null : tpsd.trim();
+    }
 
-  public void setName(String name) {
-    this.name = name == null ? null : name.trim();
-  }
+    public String getTname() {
+        return tname;
+    }
 
-  public String getPhone() {
-    return phone;
-  }
+    public void setTname(String tname) {
+        this.tname = tname == null ? null : tname.trim();
+    }
 
-  public void setPhone(String phone) {
-    this.phone = phone == null ? null : phone.trim();
-  }
+    public String getTphone() {
+        return tphone;
+    }
 
-  public String getQq() {
-    return qq;
-  }
+    public void setTphone(String tphone) {
+        this.tphone = tphone == null ? null : tphone.trim();
+    }
 
-  public void setQq(String qq) {
-    this.qq = qq == null ? null : qq.trim();
-  }
+    public String getTqq() {
+        return tqq;
+    }
 
-  public String getProfession() {
-    return profession;
-  }
+    public void setTqq(String tqq) {
+        this.tqq = tqq == null ? null : tqq.trim();
+    }
 
-  public void setProfession(String profession) {
-    this.profession = profession == null ? null : profession.trim();
-  }
+    public String getTprofession() {
+        return tprofession;
+    }
+
+    public void setTprofession(String tprofession) {
+        this.tprofession = tprofession == null ? null : tprofession.trim();
+    }
 }

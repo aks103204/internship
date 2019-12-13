@@ -168,6 +168,7 @@
   </dependencies>
 
   <build>
+    <!-- 定位打包配置文件 -->
     <resources>
       <resource>
         <directory>src/main/java</directory>
@@ -180,10 +181,8 @@
       </resource>
       <resource>
         <directory>src/main/resources</directory>
-        <!--
-            <includes> <include>**/*.properties</include>
-            <include>**/*.xml</include> </includes> <filtering>true</filtering>
-        -->
+            <!--<includes> <include>**/*.properties</include>-->
+            <!--<include>**/*.xml</include> </includes> <filtering>true</filtering>-->
       </resource>
     </resources>
     <plugins>

@@ -2,6 +2,7 @@ package com.test.controller;
 
 
 import com.test.model.T_admin;
+import com.test.model.T_class;
 import com.test.model.T_file;
 import com.test.model.T_student;
 import com.test.model.T_teacher;
@@ -42,7 +43,9 @@ public class AdminController {
   @RequestMapping(value = "/login/{ano}/{password}")
   public ResponseEntity<Void> login(@PathVariable("ano") String ano,
       @PathVariable("password") String psd) {
-    T_admin t_admin = new T_admin(ano, psd);
+    T_admin t_admin = new T_admin();
+    t_admin.setPsd(psd);
+    t_admin.setAno(ano);
     boolean flag = adminService.login(t_admin);
     if (flag) {
       return new ResponseEntity<Void>(HttpStatus.OK);
@@ -62,7 +65,11 @@ public class AdminController {
       @PathVariable("name") String name,
       @PathVariable("phone") String phone,
       @PathVariable("qq") String qq) {
-    T_admin t_admin = new T_admin(ano, name, phone, qq);
+    T_admin t_admin = new T_admin();
+    t_admin.setAno(ano);
+    t_admin.setName(name);
+    t_admin.setPhone(phone);
+    t_admin.setQq(qq);
     boolean flag = adminService.update(t_admin);
     if (flag) {
       return new ResponseEntity<Void>(HttpStatus.OK);
@@ -75,7 +82,9 @@ public class AdminController {
   public ResponseEntity<Void> admin_Update_Psd(@PathVariable("ano") String ano,
       @PathVariable("old_psd") String psd,
       @PathVariable("new_psd") String npsd) {
-    T_admin t_admin = new T_admin(ano, psd);
+    T_admin t_admin = new T_admin();
+    t_admin.setAno(ano);
+    t_admin.setPsd(psd);
     boolean flag = adminService.login(t_admin);
     if (flag) {
       if (adminService.updatePsd(t_admin, npsd) == true) {
@@ -143,11 +152,11 @@ public class AdminController {
       @PathVariable("qq") String qq) {
     T_teacher t_teacher = new T_teacher();
     t_teacher.setTno(tno);
-    t_teacher.setPsd(password);
-    t_teacher.setName(name);
-    t_teacher.setPhone(phone);
-    t_teacher.setProfession(profession);
-    t_teacher.setQq(qq);
+    t_teacher.setTpsd(password);
+    t_teacher.setTname(name);
+    t_teacher.setTphone(phone);
+    t_teacher.setTqq(qq);
+    t_teacher.setTprofession(profession);
     Boolean flag = adminService.updateTeacher_InfoByTno(t_teacher);
     if(flag){
       return new ResponseEntity<Void>(HttpStatus.OK);
@@ -158,7 +167,7 @@ public class AdminController {
 
   @RequestMapping(value = "/teacher_InfoById/{tno}")
   public ResponseEntity<T_teacher> teacher_InfoById(@PathVariable("tno") String tno) {
-    T_teacher t = adminService.queryTeacher_InfoByTno(tno);
+    T_teacher t = adminService.selectByTeacher_PrimaryKey(tno);
     return new ResponseEntity<T_teacher>(t, HttpStatus.OK);
   }
 
@@ -178,9 +187,9 @@ public class AdminController {
     T_student t_student = new T_student();
     t_student.setSno(sno);
     t_student.setCno(cno);
-    t_student.setPsd(password);
-    t_student.setName(name);
-    t_student.setPhone(phone);
+    t_student.setSpsd(password);
+    t_student.setSname(name);
+    t_student.setSphone(phone);
     t_student.setQq(qq);
     Boolean flag = adminService.updateStudent_InfoBySno(t_student);
     if(flag){
@@ -205,9 +214,9 @@ public class AdminController {
     T_student t_student = new T_student();
     t_student.setSno(sno);
     t_student.setCno(cno);
-    t_student.setPsd(password);
-    t_student.setName(name);
-    t_student.setPhone(phone);
+    t_student.setSpsd(password);
+    t_student.setSname(name);
+    t_student.setSphone(phone);
     t_student.setQq(qq);
     Boolean flag = adminService.addStudent_InfoBySno(t_student);
     if(flag){
@@ -227,11 +236,11 @@ public class AdminController {
       @PathVariable("qq") String qq) {
     T_teacher t_teacher = new T_teacher();
     t_teacher.setTno(tno);
-    t_teacher.setPsd(password);
-    t_teacher.setName(name);
-    t_teacher.setPhone(phone);
-    t_teacher.setProfession(profession);
-    t_teacher.setQq(qq);
+    t_teacher.setTpsd(password);
+    t_teacher.setTname(name);
+    t_teacher.setTphone(phone);
+    t_teacher.setTqq(qq);
+    t_teacher.setTprofession(profession);
     Boolean flag = adminService.addTeacher_InfoByTno(t_teacher);
     if(flag){
       return new ResponseEntity<Void>(HttpStatus.OK);
@@ -257,5 +266,28 @@ public class AdminController {
     }else {
       return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
     }
+  }
+
+  @RequestMapping(value = "/class_Info")
+  public ResponseEntity<List<T_class>> class_Info() {
+    List<T_class> list = adminService.queryAllClass_Info();
+    return new ResponseEntity<List<T_class>>(list, HttpStatus.OK);
+  }
+  @RequestMapping(value = "/class_InfoById/{cno}")
+  public ResponseEntity<List<T_student>> class_InfoById(@PathVariable("cno") String cno) {
+    List<T_student> t = adminService.queryClass_StudentsByCno(cno);
+    return new ResponseEntity<List<T_student>>(t, HttpStatus.OK);
+  }
+
+  @RequestMapping(value = "/student_Teacher_Details/{sno}")
+  public ResponseEntity <List<T_teacher>> student_Teacher_Details(@PathVariable("sno") String sno) {
+    List<T_teacher> t = adminService.queryStudent_TeachersBySno(sno);
+    return new ResponseEntity<List<T_teacher>>(t, HttpStatus.OK);
+  }
+
+  @RequestMapping(value = "/teacher_Student_Details/{tno}")
+  public ResponseEntity <List<T_student>> teacher_Student_Details(@PathVariable("tno") String tno) {
+    List<T_student> t = adminService.queryTeacher_StudentsByTno(tno);
+    return new ResponseEntity<List<T_student>>(t, HttpStatus.OK);
   }
 }

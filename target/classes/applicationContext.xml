@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:util="http://www.springframework.org/schema/util" xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee"
-       xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:task="http://www.springframework.org/schema/task"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
+<beans xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+  xmlns:jee="http://www.springframework.org/schema/jee"
+  xmlns:mvc="http://www.springframework.org/schema/mvc"
+  xmlns:task="http://www.springframework.org/schema/task"
+  xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.springframework.org/schema/beans"
 
-       xsi:schemaLocation="
+  xsi:schemaLocation="
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
@@ -16,74 +19,77 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
 
-    <description>Spring公共配置</description>
-    <context:component-scan base-package="com.test">
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-    </context:component-scan>
-    <context:component-scan base-package="com.test.controller"/>
-    <!-- 开启定时任务 -->
+  <description>Spring公共配置</description>
+  <context:component-scan base-package="com.test">
+    <context:exclude-filter expression="org.springframework.stereotype.Controller"
+      type="annotation"/>
+  </context:component-scan>
+  <context:component-scan base-package="com.test.controller"/>
+  <!-- 开启定时任务 -->
 
-    <task:annotation-driven/>
-    <mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
-    <mvc:default-servlet-handler/>
+  <task:annotation-driven/>
+  <mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
+  <mvc:default-servlet-handler/>
 
-    <bean
-            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="webapp/WEB-INF/jsp/" />
-        <property name="suffix" value=".jsp" />
-    </bean>
+  <bean
+    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="prefix" value="webapp/WEB-INF/jsp/"/>
+    <property name="suffix" value=".jsp"/>
+  </bean>
 
-    <!-- 配置多媒体解析器 -->
-    <!-- 定义文件上传解析器 -->
-    <bean id="multipartResolver"
-          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <!-- 设定默认编码 -->
-        <property name="defaultEncoding" value="UTF-8"></property>
-        <!-- 设定文件上传的最大值5MB，5*1024*1024 -->
-        <property name="maxUploadSize" value="5242880"></property>
-    </bean>
+  <!-- 配置多媒体解析器 -->
+  <!-- 定义文件上传解析器 -->
+  <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+    id="multipartResolver">
+    <!-- 设定默认编码 -->
+    <property name="defaultEncoding" value="UTF-8"></property>
+    <!-- 设定文件上传的最大值5MB，5*1024*1024 -->
+    <property name="maxUploadSize" value="5242880"></property>
+  </bean>
 
-    <!-- MyBatis配置 -->
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource" />
-        <!-- 显式指定Mapper文件位置 -->
-        <!--<property name="mapperLocations" value="classpath:com" />-->
-        <!-- mybatis配置文件路径 -->
-        <property name="configLocation" value="classpath:mybatis-config.xml"/>
-    </bean>
+  <!-- MyBatis配置 -->
+  <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+    <property name="dataSource" ref="dataSource"/>
+    <!-- 显式指定Mapper文件位置 -->
+    <!--<property name="mapperLocations" value="classpath:com" />-->
+    <!-- mybatis配置文件路径 -->
+    <property name="configLocation" value="classpath:mybatis-config.xml"/>
+  </bean>
 
-    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
-        <constructor-arg index="0" ref="sqlSessionFactory" />
-        <!-- 这个执行器会批量执行更新语句, 还有SIMPLE 和 REUSE -->
-        <constructor-arg index="1" value="BATCH" />
-    </bean>
+  <bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSessionTemplate">
+    <constructor-arg index="0" ref="sqlSessionFactory"/>
+    <!-- 这个执行器会批量执行更新语句, 还有SIMPLE 和 REUSE -->
+    <constructor-arg index="1" value="SIMPLE"/>
+  </bean>
 
-    <!-- 扫描basePackage接口 -->
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <!-- 映射器接口文件的包路径， -->
-        <property name="basePackage" value="com.test.mapper" />
-    </bean>
+  <!-- 扫描basePackage接口 -->
+  <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <!-- 映射器接口文件的包路径， -->
+    <property name="basePackage" value="com.test.mapper"/>
+  </bean>
 
-    <!-- 使用annotation定义事务 -->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"></property>
-    </bean>
-    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+  <!-- 使用annotation定义事务 -->
+  <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+    id="transactionManager">
+    <property name="dataSource" ref="dataSource"></property>
+  </bean>
+  <tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager"/>
 
-    <!-- 数据源配置, 使用Tomcat JDBC连接池 -->
-    <bean id="dataSource"
-          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver">
-        </property>
-        <property name="url" value="jdbc:mysql://127.0.0.1/tramnasys?useUnicode=true&amp;characterEncoding=utf-8" />
-        <property name="username" value="root"></property>
-        <property name="password" value="root"></property>
-    </bean>
+  <!-- 数据源配置, 使用Tomcat JDBC连接池 -->
+  <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+    id="dataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver">
+    </property>
+    <property name="url"
+      value="jdbc:mysql://127.0.0.1/tramnasys?useUnicode=true&amp;characterEncoding=utf-8"/>
+    <property name="username" value="root"></property>
+    <property name="password" value="root"></property>
+  </bean>
 
-    <!-- production环境 -->
-    <beans profile="production">
-        <context:property-placeholder ignore-unresolvable="true" file-encoding="utf-8"
-                                      location="classpath:jdbc.properties" />
-    </beans>
+  <!-- production环境 -->
+  <beans profile="production">
+    <context:property-placeholder file-encoding="utf-8" ignore-unresolvable="true"
+      location="classpath:jdbc.properties"/>
+  </beans>
 
 </beans>

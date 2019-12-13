@@ -1,7 +1,8 @@
-package com.test.mapper;
+package com.test.Tool;
 
 import com.test.Tool.InsertByExcel;
 import com.test.model.T_admin;
+import com.test.model.T_class;
 import com.test.model.T_student;
 import com.test.model.T_teacher;
 import com.test.server.AdminImpl;
@@ -28,12 +29,12 @@ public class test {
   @Autowired
   private AdminImpl adminService;
 
-  @Test
-  public void testqueryCustomerbyid() {
-    T_admin t_admin = new T_admin("1001", "123");
-    boolean f = adminService.login(t_admin);
-    System.out.println(f);
-  }
+//  @Test
+//  public void testqueryCustomerbyid() {
+//    T_admin t_admin = new T_admin("1001", "123");
+//    boolean f = adminService.login(t_admin);
+//    System.out.println(f);
+//  }
 
   @Test
   public void queryCustomerbyid() {
@@ -57,21 +58,23 @@ public class test {
     System.out.println(realfilepath);
   }
 
-  //    @Test
-//    public void insertFile() throws IOException {
-//        File file = new File("C:/mybatisgen/stu.xlsx");
-//        ArrayList<ArrayList<Object>> result = InsertByExcel.readExcel(file);
-//        for (int i = 0; i < result.size(); i++) {
-//            System.out.printf("\n");
-//            for (int j = 0; j < result.get(i).size(); j++) {
-//                System.out.printf(result.get(i).get(j).toString());
-//                System.out.printf("\t");
-//            }
+      @Test
+    public void insertFile() throws IOException {
+        File file = new File("C:/mybatisgen/stu.xlsx");
+        ArrayList<ArrayList<Object>> result = InsertByExcel.readExcel(file);
+        for (int i = 0; i < result.size(); i++) {
+          System.out.printf("\n");
+          for (int j = 0; j < result.get(i).size(); j++) {
+            System.out.printf(result.get(i).get(j).toString());
+            System.out.printf("\t");
+          }
+        }
+      }
   @Test
   public void queryTeaInfo() {
     List<T_teacher> list = adminService.queryAllTeacher_Info();
     for (T_teacher t : list) {
-      System.out.println(t.getName() + " " + t.getTno());
+      System.out.println(t.getTname() + " " + t.getTno());
     }
   }
 
@@ -79,45 +82,42 @@ public class test {
   public void queryStuInfo() {
     List<T_student> list = adminService.queryAllStudent_Info();
     for (T_student t : list) {
-      System.out.println(t.getName() + " " + t.getSno());
+      System.out.println(t.getSname() + " " + t.getSno());
     }
   }
 
   @Test
   public void queryTeaInfoByTno() {
-    T_teacher t = adminService.queryTeacher_InfoByTno("10020");
-    System.out.println(t.getName());
+    T_teacher t = adminService.selectByTeacher_PrimaryKey("10020");
+    System.out.println(t.getTname());
   }
 
   @Test
   public void queryStuInfoByTno() {
-    T_student t = adminService.queryStudent_InfoBySno("16201433");
-    System.out.println(t.getName());
+    List<T_teacher> list=adminService.queryStudent_TeachersBySno("16201401");
+    for(T_teacher tt : list){
+      System.out.println(tt.getTname()+"@@@@@@@");
+    }
   }
-//    @Test
-//    public void testQueryUserByUserId() {
-//        String userId = "aks123";
-//        int n = userService.queryUserByUserName(userId);
-//        System.out.println(n);
-//    }
-//    @Test
-//    public void insert(){
-//        userService.register("123","123");
-//    }
-//    @Test
-//    public void update(){
-//        System.out.println(customerService.updateById(12,"橘子","asd","12121",1));
-//    }
-//    @Test
-//    public void queryLike(){
-//        List<Customer> l = customerService.queryLike(1,"笔");
-//        System.out.println(l.size());
-//        System.out.println(l.size());
-//        System.out.println(l.size());
-//        System.out.println(l.size());
-//        for(Customer customer :l){
-//            System.out.println(customer.getName());
-//        }
-//    }
 
+  @Test
+  public void queryTeaInfoBySno() {
+    List<T_student> list= adminService.queryTeacher_StudentsByTno("10025");
+    for(T_student tt : list){
+      System.out.println(tt.getSname()+"@@@@@@@");
+    }
+  }
+  @Test
+  public void queryClassInfoByCno() {
+    T_class t = adminService.queryClass_InfoByCno("162014");
+    List<T_student> list = t.getStudentList();
+    for(T_student tt : list){
+      System.out.println(tt.getSname()+"@@@@@@@");
+    }
+  }
+  @Test
+  public void queryClassInfoByPrimaryKey() {
+    T_class t = adminService.selectByClass_PrimaryKey("162014");
+    System.out.println("#########"+t.getCprofession());
+  }
 }

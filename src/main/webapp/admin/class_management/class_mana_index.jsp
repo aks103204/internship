@@ -6,15 +6,23 @@
     <meta charset="UTF-8">
     <title>main</title>
     <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
-    <script language="JavaScript" src="../../JS/jquery.js"></script>
+    <script type="text/javascript" src="../../JS/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../../JS/jquery.cookie.js"></script>
 </head>
 <script type="text/javascript">
     $(function () {
+      $("#bold").css("font-weight","bold");$("#bold").css("font-weight","bold");
         //顶部导航切换
         $(".nav li a").click(function () {
             $(".nav li a.selected").removeClass("selected");
             $(this).addClass("selected");
         })
+      if(getCookie("ano")==null){
+        alert("请先登陆后访问此网页！");
+        window.location="../../index.jsp"
+      }else{
+        $("#span1").html(getCookie("ano"));
+      }
     })
 </script>
 <script type="text/javascript">
@@ -35,6 +43,64 @@
             }
         });
     })
+    var getCookie = function (name) {
+      //获取当前所有cookie
+      var strCookies = document.cookie;
+      //截取变成cookie数组
+      var array = strCookies.split(';');
+      //循环每个cookie
+      for (var i = 0; i < array.length; i++) {
+        //将cookie截取成两部分
+        var item = array[i].split("=");
+        //判断cookie的name 是否相等
+        if (item[0] == name) {
+          return item[1];
+        }
+      }
+      return null;
+    }
+    var delCookie = function (name) {
+      var exp = new Date();
+      exp.setTime(exp.getTime() - 1);
+      //获取cookie是否存在
+      var value = getCookie(name);
+      if (value != null) {
+        document.cookie = name + "=" + escape("") + ";expires="+ exp.toUTCString()+ ";path=/";
+      }
+    }
+    function quit() {
+      delCookie("ano");
+    }
+    $(function () {
+      var CLASS_INFO_URL="http://localhost:8080/admin/class_Info";
+      $.ajax({
+        contentType: "application/json",
+        url:CLASS_INFO_URL,
+        dataType: "text json",
+        type:"post",
+        statusCode:{
+          200:function(data){
+            var str="";
+            $(data).each(function (index, value) {
+              str += "<tr><td width='200' class='main'>" + value.cno + "</td>"+
+                  "<td width='200'>" + value.cprofession   + "</td>" +
+                  "<td width='200'>"  + value.totalperson  + "</td>" +
+                  "<td>"+
+                  "<input type='button'  onclick='edit("+value.cno+")' value='详情'/>"+
+                  "</td></tr>";
+            });
+            $("#msg").append(str);
+          },
+          404:function(){
+            alert("获取信息失败！");
+            window.location="../admin_index.jsp";
+          }
+        }
+      });
+    });
+    function edit(cno) {
+      window.location="class_info.jsp?cno="+cno;
+    }
 </script>
 <body style="background:url(../../images/topbg.gif) repeat-x;">
 <div class="top">
@@ -55,10 +121,10 @@
         <ul>
             <li><span><img src="../../images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
             <li><a href="#">关于</a></li>
-            <li><a href="/logout" target="_parent">退出</a></li>
+            <li><a href="../../index.jsp" onclick="quit()">退出</a></li>
         </ul>
         <div class="user">
-            <span>${admin_no}</span>
+            <span id="span1"></span>
         </div>
     </div>
 </div>
@@ -72,36 +138,28 @@
                 <span><img src="../../images/leftico01.png"/></span>管理信息
             </div>
             <ul class="menuson">
-                <li class="active"><cite></cite><a href="/class_management_indexServlet">班级管理</a><i></i></li>
-                <li><cite></cite><a href="/admin/class/class_manage.jsp">班级信息导入</a><i></i></li>
+                <li class="active"><cite></cite><a href="class_mana_index.jsp">班级管理</a><i></i></li>
+                <li><cite></cite><a href="/admin/class_management/class_manage.jsp">班级信息导入</a><i></i></li>
             </ul>
         </dd>
     </dl>
 
     <div class="main">
-        <div style="padding-left: 187px;width: 50%;overflow: hidden;margin: 0 auto;">
+        <div style="padding-left: 187px;width: 50%;margin: 0 auto;">
             <div style="height:40px;line-height:40px;">
                 <div style="color: #000;text-align: center;">
-                    <div style="width: 15.5%;float: left;">班级号</div>
-                    <div style="width: 15.5%;float: left;">专业</div>
-                    <div style="width: 15.5%;float: left;">总人数</div>
-                    <div style="float: left;width: 5.5%;">|</div>
-                    <div style="width: 15.5%;float: left;">操作</div>
-                </div><br>
+                    <table id="msg">
+                        <tbody>
+                        <tr id="bold">
+                            <td width="200" id="cno">班级号</td>
+                            <td width="200" id="profession">专业</td>
+                            <td width="200" id="totalperson">总人数</td>
+                            <td width="200">班级人员详情</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <c:if test="${not empty clazzList}">
-                <c:forEach items="${clazzList}" var="clazz">
-                    <div style="height:40px;line-height:40px;">
-                        <div style="color: #000;text-align: center;">
-                            <div style="width: 15.5%;float: left;font-size:15px;">${clazz.getCno()}</div>
-                            <div style="width: 15.5%;float: left;font-size:15px;">${clazz.getProfession()}</div>
-                            <div style="width: 15.5%;float: left;font-size:15px;">${clazz.getTotalPerson()}</div>
-                            <div style="float: left;width: 5.5%;font-size:15px;">|</div>
-                            <div style="width: 15.5%;float: left;font-size:15px;"><a style="color: #a00;" href="/student_ListServlet?cno=${clazz.getCno()}&count=${clazz.getTotalPerson()}">详情</a></div>
-                        </div><br>
-                    </div>
-                </c:forEach>
-            </c:if>
         </div>
 
         <!-- 动态生成页面跳转标签 -->
@@ -134,8 +192,6 @@
                     <div style="float: left;padding-right: 10px;padding-left: 10px;"><%="  页"%></div>
                     <a style="border: 1px solid #fcf5f5" href="javascript:void(0)" onclick="form1.submit()">确定</a>
                 </div>
-
-
             </div>
         </div>
     </div>

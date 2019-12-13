@@ -17,7 +17,8 @@
             $(this).addClass("selected");
         })
         if(getCookie("ano")==null){
-            $("#span1").html("游客");
+          alert("请先登陆后访问此网页！");
+          window.location="../../index.jsp"
         }else{
             $("#span1").html(getCookie("ano"));
         }
@@ -58,7 +59,18 @@
         }
         return null;
     }
-
+    var delCookie = function (name) {
+      var exp = new Date();
+      exp.setTime(exp.getTime() - 1);
+      //获取cookie是否存在
+      var value = getCookie(name);
+      if (value != null) {
+        document.cookie = name + "=" + escape("") + ";expires="+ exp.toUTCString()+ ";path=/";
+      }
+    }
+    function quit() {
+      delCookie("ano");
+    }
     $(function () {
         var tno=<%=request.getParameter("tno")%>;
         var TEACHER_INFOBYTNO_URL="http://localhost:8080/admin/teacher_InfoById/"+tno;
@@ -71,11 +83,11 @@
                 200:function(data){
                     $(data).each(function(i,value){
                         document.getElementById('tno').value=value.tno;
-                        document.getElementById('password').value=value.psd;
-                        document.getElementById('name').value=value.name;
-                        document.getElementById('phone').value=value.phone;
-                        document.getElementById('qq').value=value.qq;
-                        document.getElementById('profession').value=value.profession;
+                        document.getElementById('password').value=value.tpsd;
+                        document.getElementById('name').value=value.tname;
+                        document.getElementById('phone').value=value.tphone;
+                        document.getElementById('qq').value=value.tqq;
+                        document.getElementById('profession').value=value.tprofession;
                     });
                 },
                 404:function(){
@@ -168,7 +180,7 @@
         <ul>
             <li><span><img src="../../images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
             <li><a href="#">关于</a></li>
-            <li><a href="/logout">退出</a></li>
+            <li><a href="../../index.jsp" onclick="quit()">退出</a></li>
         </ul>
         <div class="user">
             <span id="span1"></span>

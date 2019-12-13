@@ -16,7 +16,8 @@
         })
 
         if(getCookie("ano")==null){
-            $("#span1").html("游客");
+          alert("请先登陆后访问此网页！");
+          window.location="../index.jsp"
         }else{
             $("#span1").html(getCookie("ano"));
         }
@@ -56,7 +57,18 @@
         }
         return null;
     }
-
+    var delCookie = function (name) {
+      var exp = new Date();
+      exp.setTime(exp.getTime() - 1);
+      //获取cookie是否存在
+      var value = getCookie(name);
+      if (value != null) {
+        document.cookie = name + "=" + escape("") + ";expires="+ exp.toUTCString()+ ";path=/";
+      }
+    }
+    function quit() {
+      delCookie("ano");
+    }
     $(function () {
         var ano=getCookie("ano");
         var ADMIN_INFO_URL="http://localhost:8080/admin/admin_Info/"+ano;
@@ -94,9 +106,9 @@
     <ul class="nav">
         <li><a href="teacher_management/teacher_mana_index.jsp"><img src="../images/icon02.png" title="教师管理"/>
             <h2>教师管理</h2></a></li>
-        <li><a href=""><img src="../images/icon03.png" title="学生管理"/>
+        <li><a href="student_management/student_mana_index.jsp"><img src="../images/icon03.png" title="学生管理"/>
             <h2>学生管理</h2></a></li>
-        <li><a href="" ><img src="../../images/icon01.png" title="班级管理"/>
+        <li><a href="class_management/class_mana_index.jsp" ><img src="../../images/icon01.png" title="班级管理"/>
             <h2>班级管理</h2></a></li>
     </ul>
 
@@ -104,7 +116,7 @@
         <ul>
             <li><span><img src="../images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
             <li><a href="#">关于</a></li>
-            <li><a href="/logout">退出</a></li>
+            <li><a href="../index.jsp" onclick="quit()">退出</a></li>
         </ul>
         <div class="user">
             <span id="span1"></span>

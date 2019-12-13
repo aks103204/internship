@@ -42,7 +42,7 @@
                         window.location="admin/admin_index.jsp";
                     },
                     404:function(){
-                        alert("登陆失败！");
+                        alert("用户名或密码错误！");
                         window.location="index.jsp";
                     }
                 }

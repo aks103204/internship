@@ -16,7 +16,8 @@
             $(this).addClass("selected");
         })
         if(getCookie("ano")==null){
-            $("#span1").html("游客");
+          alert("请先登陆后访问此网页！");
+          window.location="../index.jsp"
         }else{
             $("#span1").html(getCookie("ano"));
         }
@@ -56,6 +57,18 @@
         }
         return null;
     }
+    var delCookie = function (name) {
+      var exp = new Date();
+      exp.setTime(exp.getTime() - 1);
+      //获取cookie是否存在
+      var value = getCookie(name);
+      if (value != null) {
+        document.cookie = name + "=" + escape("") + ";expires="+ exp.toUTCString()+ ";path=/";
+      }
+    }
+    function quit() {
+      delCookie("ano");
+    }
     function admin_Update_Psd(){
         var ano=getCookie("ano");
         var old_psd=$("#old_psd").val();
@@ -85,8 +98,8 @@
             type:"POST",
             statusCode:{
                 200:function(data){
-                    alert("密码修改成功！将自动跳转到主页。")
-                    window.location.href="admin_index.jsp";
+                    alert("密码修改成功,请重新输入密码登陆！")
+                    window.location.href="../index.jsp";
                 },
                 404:function(){
                     alert("密码修改失败，请重试！");
@@ -109,9 +122,9 @@
     <ul class="nav">
         <li><a href="teacher_management/teacher_mana_index.jsp" class="selected"><img src="../images/icon02.png" title="教师管理"/>
             <h2>教师管理</h2></a></li>
-        <li><a href="/student_manage"><img src="../images/icon03.png" title="学生管理"/>
+        <li><a href="student_management/student_mana_index.jsp"><img src="../images/icon03.png" title="学生管理"/>
             <h2>学生管理</h2></a></li>
-        <li><a href="/class_management_indexServlet" ><img src="../../images/icon01.png" title="班级管理"/>
+        <li><a href="class_management/class_mana_index.jsp" ><img src="../../images/icon01.png" title="班级管理"/>
             <h2>班级管理</h2></a></li>
     </ul>
 
@@ -119,10 +132,10 @@
         <ul>
             <li><span><img src="../images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
             <li><a href="#">关于</a></li>
-            <li><a href="/logout">退出</a></li>
+            <li><a href="../index.jsp" onclick="quit()">退出</a></li>
         </ul>
-        <div class="user">
-            <span span="span1"></span>
+        <div class="user"id>
+            <span ="span1"></span>
         </div>
     </div>
 </div>

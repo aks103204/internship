@@ -3,6 +3,7 @@ package com.test.server;
 
 import com.test.Tool.InsertByExcel;
 import com.test.mapper.T_adminMapper;
+import com.test.mapper.T_classMapper;
 import com.test.mapper.T_fileMapper;
 import com.test.mapper.T_studentMapper;
 import com.test.mapper.T_teacherMapper;
@@ -34,7 +35,8 @@ public class AdminImpl {
   T_fileMapper fileDao;
   @Autowired
   T_teacherMapper teacherDao;
-
+  @Autowired
+  T_classMapper classDao;
   public List<T_admin> queryAdmin_InfoByAno(String ano) {
     T_adminExample T_adminExample = new T_adminExample();
     T_adminExample.createCriteria().andAnoEqualTo(ano);
@@ -95,6 +97,7 @@ public class AdminImpl {
      * flag=x6
      */
     String flag = null;
+    int count=0;
     String testphone = "^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$";
     String testname = "^[\u4E00-\u9FA5A-Za-z]+$";
     String testsid = "^[0-9]*$/";
@@ -102,74 +105,76 @@ public class AdminImpl {
       flag = "02";
     } else if (file.getOriginalFilename().indexOf("xlsx") < 0
         || file.getOriginalFilename().indexOf("xls") < 0) {
-      flag = "03";//文件类型错误
+      flag = "03";
     } else if (infoType.equals("student")) {
       T_student t_student = new T_student();
-      for (int i = 0; i < result.size(); i++) {
-        for (int j = 0; j < result.get(i).size(); j++) {
-          String sno = ((String) result.get(i).get(0)).split("\\.")[0];
-          String cno = ((String) result.get(i).get(1)).split("\\.")[0];
-          String psd = ((String) result.get(i).get(2)).split("\\.")[0];
-          String name = ((String) result.get(i).get(3));
-          String phone = ((String) result.get(i).get(4)).split("\\.")[0];
-          String qq = ((String) result.get(i).get(5)).split("\\.")[0];
-          boolean rsphone = phone.matches(testphone);
-          boolean rsname = name.matches(testname);
-          //boolean rssid = cno.matches(testsid);
-          //不符合输出标准的数据，不进行插入并且终止，提醒用户
-          if (rsname == false || rsphone == false) {
-            flag = "12";
-          }
+      for (int i = 1; i < result.size(); i++) {
+        String sno = ((String) result.get(i).get(0)).split("\\.")[0];
+        String cno = ((String) result.get(i).get(1)).split("\\.")[0];
+        String psd = ((String) result.get(i).get(2)).split("\\.")[0];
+        String name = ((String) result.get(i).get(3));
+        String phone = ((String) result.get(i).get(4)).split("\\.")[0];
+        String qq = ((String) result.get(i).get(5)).split("\\.")[0];
+        boolean rsphone = phone.matches(testphone);
+        boolean rsname = name.matches(testname);
+        //boolean rssid = cno.matches(testsid);
+        if (rsname == false || rsphone == false || (rsname && rsphone && phone == null &&
+            cno == null && psd == null && name == null)) {
+          flag = "12";
+          break;
+        } else {
+          t_student.setSno(sno);
+          t_student.setCno(cno);
+          t_student.setSpsd(psd);
+          t_student.setSname(name);
+          t_student.setSphone(phone);
+          t_student.setQq(qq);
           if (studentDao.selectByPrimaryKey(t_student.getSno()) != null) {
-            flag = "13"; //学生已经存在
+            flag = "13";
             break;
-          } else if (rsname && rsphone && phone != null &&
-              cno != null && psd != null && name != null) {
-            t_student.setSno(sno);
-            t_student.setCno(cno);
-            t_student.setPsd(psd);
-            t_student.setName(name);
-            t_student.setPhone(phone);
-            t_student.setQq(qq);
+          } else {
             studentDao.insert(t_student);
-            flag = "11"; //学生信息导入成功
-            break;
+            count++;
           }
         }
       }
+      if(count==result.size()-1){
+        flag = "11"; //学生信息导入成功
+      }
     } else if (infoType.equals("teacher")) {
       T_teacher t_teacher = new T_teacher();
-      for (int i = 0; i < result.size(); i++) {
-        for (int j = 0; j < result.get(i).size(); j++) {
-          String tno = ((String) result.get(i).get(0)).split("\\.")[0];
-          String psd = ((String) result.get(i).get(1)).split("\\.")[0];
-          String name = ((String) result.get(i).get(2));
-          String phone = ((String) result.get(i).get(3)).split("\\.")[0];
-          String qq = ((String) result.get(i).get(4)).split("\\.")[0];
-          String profession = ((String) result.get(i).get(5)).split("\\.")[0];
-          boolean rsphone = phone.matches(testphone);
-          boolean rsname = name.matches(testname);
-          //boolean rssid = cno.matches(testsid);
-          //不符合输出标准的数据，不进行插入并且终止，提醒用户
-          if (rsname == false || rsphone == false) {
-            flag = "22";
-          }
+      for (int i = 1; i < result.size(); i++) {
+        String tno = ((String) result.get(i).get(0)).split("\\.")[0];
+        String psd = ((String) result.get(i).get(1)).split("\\.")[0];
+        String name = ((String) result.get(i).get(2));
+        String phone = ((String) result.get(i).get(3)).split("\\.")[0];
+        String qq = ((String) result.get(i).get(4)).split("\\.")[0];
+        String profession = ((String) result.get(i).get(5)).split("\\.")[0];
+        boolean rsphone = phone.matches(testphone);
+        boolean rsname = name.matches(testname);
+        //boolean rssid = cno.matches(testsid);
+        //不符合输出标准的数据，不进行插入并且终止，提醒用户
+        if (rsname == false || rsphone == false || (rsname && rsphone && phone != null &&
+            tno != null && psd != null && name != null)) {
+          flag = "22";
+        } else {
+          t_teacher.setTno(tno);
+          t_teacher.setTpsd(psd);
+          t_teacher.setTname(name);
+          t_teacher.setTphone(phone);
+          t_teacher.setTqq(qq);
+          t_teacher.setTprofession(profession);
           if (studentDao.selectByPrimaryKey(t_teacher.getTno()) != null) {
             flag = "23"; //老师已经存在
             break;
-          } else if (rsname && rsphone && phone != null &&
-              tno != null && psd != null && name != null) {
-            t_teacher.setTno(tno);
-            t_teacher.setPsd(psd);
-            t_teacher.setName(name);
-            t_teacher.setPhone(phone);
-            t_teacher.setQq(qq);
-            t_teacher.setProfession(profession);
+          } else {
             teacherDao.insert(t_teacher);
-            flag = "21"; //学生信息导入成功
-            break;
+           count++;
           }
         }
+      }
+      if(count==result.size()-1){
+        flag = "21"; //老师信息导入成功
       }
     }
     return flag;
@@ -207,7 +212,7 @@ public class AdminImpl {
     t_file.setTaskNo(null);
     t_file.setOwePerno(OwePerno.split("\\.")[0]);
 
-    if (fileDao.insert(t_file) == (-2147482646)) {
+    if (fileDao.insert(t_file)>0) {
       result[0] = "01";
     }
     result[1] = insertInfoByFile(file, list, infoType);
@@ -221,13 +226,12 @@ public class AdminImpl {
   public Boolean updateTeacher_InfoByTno(T_teacher t_teacher) {
     T_teacherExample t_teacherExample = new T_teacherExample();
     t_teacherExample.createCriteria().andTnoEqualTo(t_teacher.getTno());
-        if(teacherDao.updateByExampleSelective(t_teacher,t_teacherExample)==(-2147482646)){
+        if(teacherDao.updateByExampleSelective(t_teacher,t_teacherExample)>0){
          return true;
         }
     return false;
   }
-
-  public T_teacher queryTeacher_InfoByTno(String tno) {
+  public T_teacher selectByTeacher_PrimaryKey(String tno){
     return teacherDao.selectByPrimaryKey(tno);
   }
 
@@ -238,7 +242,7 @@ public class AdminImpl {
   public Boolean updateStudent_InfoBySno(T_student t_student) {
     T_studentExample t_studentExample = new T_studentExample();
     t_studentExample.createCriteria().andSnoEqualTo(t_student.getSno());
-        if(studentDao.updateByExampleSelective(t_student, t_studentExample) == (-2147482646)){
+        if(studentDao.updateByExampleSelective(t_student, t_studentExample) >0){
          return true;
         }
     return false;
@@ -249,7 +253,7 @@ public class AdminImpl {
   }
 
   public Boolean addStudent_InfoBySno(T_student t_student) {
-    if(studentDao.insert(t_student) == (-2147482646)){
+    if(studentDao.insert(t_student)>0){
       return true;
     }
     return false;
@@ -257,23 +261,49 @@ public class AdminImpl {
 
   public Boolean addTeacher_InfoByTno(T_teacher t_teacher) {
 
-    if(teacherDao.insert(t_teacher) == (-2147482646)){
+    if(teacherDao.insert(t_teacher) >0){
       return true;
     }
     return false;
   }
 
   public boolean deleteStudent_InfoBySno(String sno) {
-    if(studentDao.deleteByPrimaryKey(sno)== (-2147482646)){
+    if(studentDao.deleteByPrimaryKey(sno)>0){
       return true;
     }
     return false;
   }
 
   public Boolean deleteTeacher_InfoBySno(String tno) {
-    if(teacherDao.deleteByPrimaryKey(tno)== (-2147482646)){
+    if(teacherDao.deleteByPrimaryKey(tno)>0){
       return true;
     }
     return false;
+  }
+
+  public List<T_class> queryAllClass_Info() {
+    return classDao.queryAllClassInfo();
+  }
+
+  public T_class selectByClass_PrimaryKey(String cno){
+    return classDao.selectByPrimaryKey(cno);
+  }
+
+  public T_class queryClass_InfoByCno(String cno) {
+    return classDao.queryClass_InfoByCno(cno);
+  }
+  public List<T_student> queryClass_StudentsByCno(String cno) {
+    T_studentExample t_studentExample = new T_studentExample();
+    t_studentExample.createCriteria().andCnoEqualTo(cno);
+    return studentDao.selectByExample(t_studentExample);
+  }
+
+  public List<T_teacher> queryStudent_TeachersBySno(String sno) {
+    List<T_teacher> list = studentDao.queryStudent_TeacherBySno(sno).getTeacherList();
+    return list;
+  }
+  public List<T_student> queryTeacher_StudentsByTno(String tno) {
+    List<T_student> list = teacherDao.queryTeacher_StudentByTno(tno).getStudentList();
+    return list;
   }
 }

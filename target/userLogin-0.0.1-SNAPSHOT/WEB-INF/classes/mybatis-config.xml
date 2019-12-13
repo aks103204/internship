@@ -23,7 +23,7 @@
 
             <dataSource type="POOLED">
 
-                <property name="driver" value="org.gjt.mm.mysql.Driver" />
+                <property name="driver" value="com.mysql.jdbc.Driver" />
 
                 <property name="url" value="jdbc:mysql://127.0.0.1/tramnasys?useUnicode=true&amp;characterEncoding=utf-8" />
 
@@ -39,6 +39,9 @@
     </environments>
 
     <!--<mappers>-->
-    <!--<mapper resource="com/test/mapper/UserMapper.xml"></mapper>-->
+        <!--<mapper resource="com.test.mapper.T_teacherMapper"/>-->
     <!--</mappers>-->
+
+
 </configuration>
+

@@ -3,9 +3,22 @@
 <mapper namespace="com.test.mapper.T_classMapper" >
   <resultMap id="BaseResultMap" type="com.test.model.T_class" >
     <id column="cno" property="cno" jdbcType="VARCHAR" />
-    <result column="profession" property="profession" jdbcType="VARCHAR" />
+    <result column="cprofession" property="cprofession" jdbcType="VARCHAR" />
     <result column="totalPerson" property="totalperson" jdbcType="INTEGER" />
   </resultMap>
+
+  <resultMap id="ClassResultMap" type="com.test.model.T_class">
+
+    <collection property="studentList" ofType="com.test.model.T_student" column="sno">
+      <id column="sno" property="sno" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <result column="cno" property="cno" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <result column="spsd" property="spsd" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <result column="sname" property="sname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <result column="sphone" property="sphone" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <result column="qq" property="qq" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
   <sql id="Example_Where_Clause" >
     <where >
       <foreach collection="oredCriteria" item="criteria" separator="or" >
@@ -65,7 +78,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    cno, profession, totalPerson
+    cno, cprofession, totalPerson
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.test.model.T_classExample" >
     select
@@ -87,6 +100,18 @@
     from t_class
     where cno = #{cno,jdbcType=VARCHAR}
   </select>
+  <select id="queryAllClassInfo"  resultType="com.test.model.T_class">
+    select * from t_class
+  </select>
+
+  <select id="queryClass_InfoByCno" resultMap="ClassResultMap" parameterType="java.lang.String">
+     select cc.*,s.*
+    from t_student s
+    left join  t_class cc
+    on s.cno = cc.cno
+    where cc.cno=#{cno,jdbcType=VARCHAR}
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
     delete from t_class
     where cno = #{cno,jdbcType=VARCHAR}
@@ -98,9 +123,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.test.model.T_class" >
-    insert into t_class (cno, profession, totalPerson
+    insert into t_class (cno, cprofession, totalPerson
       )
-    values (#{cno,jdbcType=VARCHAR}, #{profession,jdbcType=VARCHAR}, #{totalperson,jdbcType=INTEGER}
+    values (#{cno,jdbcType=VARCHAR}, #{cprofession,jdbcType=VARCHAR}, #{totalperson,jdbcType=INTEGER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.test.model.T_class" >
@@ -109,8 +134,8 @@
       <if test="cno != null" >
         cno,
       </if>
-      <if test="profession != null" >
-        profession,
+      <if test="cprofession != null" >
+        cprofession,
       </if>
       <if test="totalperson != null" >
         totalPerson,
@@ -120,8 +145,8 @@
       <if test="cno != null" >
         #{cno,jdbcType=VARCHAR},
       </if>
-      <if test="profession != null" >
-        #{profession,jdbcType=VARCHAR},
+      <if test="cprofession != null" >
+        #{cprofession,jdbcType=VARCHAR},
       </if>
       <if test="totalperson != null" >
         #{totalperson,jdbcType=INTEGER},
@@ -140,8 +165,8 @@
       <if test="record.cno != null" >
         cno = #{record.cno,jdbcType=VARCHAR},
       </if>
-      <if test="record.profession != null" >
-        profession = #{record.profession,jdbcType=VARCHAR},
+      <if test="record.cprofession != null" >
+        cprofession = #{record.cprofession,jdbcType=VARCHAR},
       </if>
       <if test="record.totalperson != null" >
         totalPerson = #{record.totalperson,jdbcType=INTEGER},
@@ -154,7 +179,7 @@
   <update id="updateByExample" parameterType="map" >
     update t_class
     set cno = #{record.cno,jdbcType=VARCHAR},
-      profession = #{record.profession,jdbcType=VARCHAR},
+      cprofession = #{record.cprofession,jdbcType=VARCHAR},
       totalPerson = #{record.totalperson,jdbcType=INTEGER}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -163,8 +188,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.test.model.T_class" >
     update t_class
     <set >
-      <if test="profession != null" >
-        profession = #{profession,jdbcType=VARCHAR},
+      <if test="cprofession != null" >
+        cprofession = #{cprofession,jdbcType=VARCHAR},
       </if>
       <if test="totalperson != null" >
         totalPerson = #{totalperson,jdbcType=INTEGER},
@@ -174,7 +199,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.test.model.T_class" >
     update t_class
-    set profession = #{profession,jdbcType=VARCHAR},
+    set cprofession = #{cprofession,jdbcType=VARCHAR},
       totalPerson = #{totalperson,jdbcType=INTEGER}
     where cno = #{cno,jdbcType=VARCHAR}
   </update>

@@ -54,10 +54,10 @@
         <ul>
             <li><span><img src="../../images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
             <li><a href="#">关于</a></li>
-            <li><a href="/logout">退出</a></li>
+            <li><a href="../../index.jsp" onclick="quit()">退出</a></li>
         </ul>
         <div class="user">
-            <span>${admin_no}</span>
+            <span id="span1"></span>
         </div>
     </div>
 </div>
@@ -71,7 +71,7 @@
                 <span><img src="../../images/leftico01.png"/></span>管理信息
             </div>
             <ul class="menuson">
-                <li ><cite></cite><a href="/class_management_indexServlet">班级管理</a><i></i></li>
+                <li ><cite></cite><a href="class_mana_index.jsp">班级管理</a><i></i></li>
                 <li class="active"><cite></cite><a href="#">班级信息导入</a><i></i></li>
 
             </ul>

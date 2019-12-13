@@ -4,11 +4,24 @@
   <resultMap id="BaseResultMap" type="com.test.model.T_student" >
     <id column="sno" property="sno" jdbcType="VARCHAR" />
     <result column="cno" property="cno" jdbcType="VARCHAR" />
-    <result column="psd" property="psd" jdbcType="VARCHAR" />
-    <result column="name" property="name" jdbcType="VARCHAR" />
-    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="spsd" property="spsd" jdbcType="VARCHAR" />
+    <result column="sname" property="sname" jdbcType="VARCHAR" />
+    <result column="sphone" property="sphone" jdbcType="VARCHAR" />
     <result column="qq" property="qq" jdbcType="VARCHAR" />
   </resultMap>
+
+  <resultMap id="StudentResultMap" type="com.test.model.T_student">
+    <collection property="teacherList" ofType="com.test.model.T_teacher" column="tno">
+      <id column="tno" property="tno" jdbcType="VARCHAR" />
+      <result column="tpsd" property="tpsd" jdbcType="VARCHAR" />
+      <result column="tname" property="tname" jdbcType="VARCHAR" />
+      <result column="tphone" property="tphone" jdbcType="VARCHAR" />
+      <result column="tqq" property="tqq" jdbcType="VARCHAR" />
+      <result column="tprofession" property="tprofession" jdbcType="VARCHAR" />
+      <result column="cno" property="cno" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
   <sql id="Example_Where_Clause" >
     <where >
       <foreach collection="oredCriteria" item="criteria" separator="or" >
@@ -68,7 +81,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    sno, cno, psd, name, phone, qq
+    sno, cno, spsd, sname, sphone, qq
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.test.model.T_studentExample" >
     select
@@ -93,6 +106,17 @@
   <select id="queryAllStudentInfo"  resultType="com.test.model.T_student">
     select * from t_student
   </select>
+
+  <select id="queryStudent_TeacherBySno" resultMap="StudentResultMap" parameterType="java.lang.String">
+    select s.*,t.*
+    from t_ts
+    left join  t_student s
+    on s.sno = t_ts.sno
+    left join t_teacher t
+    on t.tno = t_ts.tno
+    where s.sno=#{sno,jdbcType=VARCHAR}
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
     delete from t_student
     where sno = #{sno,jdbcType=VARCHAR}
@@ -104,11 +128,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.test.model.T_student" >
-    insert into t_student (sno, cno, psd, 
-      name, phone, qq)
-    values (#{sno,jdbcType=VARCHAR}, #{cno,jdbcType=VARCHAR}, #{psd,jdbcType=VARCHAR}, 
-      #{name,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{qq,jdbcType=VARCHAR})
-
+    insert into t_student (sno, cno, spsd, 
+      sname, sphone, qq)
+    values (#{sno,jdbcType=VARCHAR}, #{cno,jdbcType=VARCHAR}, #{spsd,jdbcType=VARCHAR}, 
+      #{sname,jdbcType=VARCHAR}, #{sphone,jdbcType=VARCHAR}, #{qq,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.test.model.T_student" >
     insert into t_student
@@ -119,14 +142,14 @@
       <if test="cno != null" >
         cno,
       </if>
-      <if test="psd != null" >
-        psd,
+      <if test="spsd != null" >
+        spsd,
       </if>
-      <if test="name != null" >
-        name,
+      <if test="sname != null" >
+        sname,
       </if>
-      <if test="phone != null" >
-        phone,
+      <if test="sphone != null" >
+        sphone,
       </if>
       <if test="qq != null" >
         qq,
@@ -139,14 +162,14 @@
       <if test="cno != null" >
         #{cno,jdbcType=VARCHAR},
       </if>
-      <if test="psd != null" >
-        #{psd,jdbcType=VARCHAR},
+      <if test="spsd != null" >
+        #{spsd,jdbcType=VARCHAR},
       </if>
-      <if test="name != null" >
-        #{name,jdbcType=VARCHAR},
+      <if test="sname != null" >
+        #{sname,jdbcType=VARCHAR},
       </if>
-      <if test="phone != null" >
-        #{phone,jdbcType=VARCHAR},
+      <if test="sphone != null" >
+        #{sphone,jdbcType=VARCHAR},
       </if>
       <if test="qq != null" >
         #{qq,jdbcType=VARCHAR},
@@ -168,14 +191,14 @@
       <if test="record.cno != null" >
         cno = #{record.cno,jdbcType=VARCHAR},
       </if>
-      <if test="record.psd != null" >
-        psd = #{record.psd,jdbcType=VARCHAR},
+      <if test="record.spsd != null" >
+        spsd = #{record.spsd,jdbcType=VARCHAR},
       </if>
-      <if test="record.name != null" >
-        name = #{record.name,jdbcType=VARCHAR},
+      <if test="record.sname != null" >
+        sname = #{record.sname,jdbcType=VARCHAR},
       </if>
-      <if test="record.phone != null" >
-        phone = #{record.phone,jdbcType=VARCHAR},
+      <if test="record.sphone != null" >
+        sphone = #{record.sphone,jdbcType=VARCHAR},
       </if>
       <if test="record.qq != null" >
         qq = #{record.qq,jdbcType=VARCHAR},
@@ -189,9 +212,9 @@
     update t_student
     set sno = #{record.sno,jdbcType=VARCHAR},
       cno = #{record.cno,jdbcType=VARCHAR},
-      psd = #{record.psd,jdbcType=VARCHAR},
-      name = #{record.name,jdbcType=VARCHAR},
-      phone = #{record.phone,jdbcType=VARCHAR},
+      spsd = #{record.spsd,jdbcType=VARCHAR},
+      sname = #{record.sname,jdbcType=VARCHAR},
+      sphone = #{record.sphone,jdbcType=VARCHAR},
       qq = #{record.qq,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -203,14 +226,14 @@
       <if test="cno != null" >
         cno = #{cno,jdbcType=VARCHAR},
       </if>
-      <if test="psd != null" >
-        psd = #{psd,jdbcType=VARCHAR},
+      <if test="spsd != null" >
+        spsd = #{spsd,jdbcType=VARCHAR},
       </if>
-      <if test="name != null" >
-        name = #{name,jdbcType=VARCHAR},
+      <if test="sname != null" >
+        sname = #{sname,jdbcType=VARCHAR},
       </if>
-      <if test="phone != null" >
-        phone = #{phone,jdbcType=VARCHAR},
+      <if test="sphone != null" >
+        sphone = #{sphone,jdbcType=VARCHAR},
       </if>
       <if test="qq != null" >
         qq = #{qq,jdbcType=VARCHAR},
@@ -221,9 +244,9 @@
   <update id="updateByPrimaryKey" parameterType="com.test.model.T_student" >
     update t_student
     set cno = #{cno,jdbcType=VARCHAR},
-      psd = #{psd,jdbcType=VARCHAR},
-      name = #{name,jdbcType=VARCHAR},
-      phone = #{phone,jdbcType=VARCHAR},
+      spsd = #{spsd,jdbcType=VARCHAR},
+      sname = #{sname,jdbcType=VARCHAR},
+      sphone = #{sphone,jdbcType=VARCHAR},
       qq = #{qq,jdbcType=VARCHAR}
     where sno = #{sno,jdbcType=VARCHAR}
   </update>
