@@ -3,36 +3,36 @@ package com.test.model;
 import java.util.Date;
 
 public class Task {
-    private Integer taskNo;
+    private Integer taskno;
 
-    private String taskName;
+    private String taskname;
 
     private String tno;
 
-    private String taskContent;
+    private String taskcontent;
 
     private Boolean submit;
 
-    private Date startTime;
+    private Date starttime;
 
-    private Date endTime;
+    private Date endtime;
 
-    private Date createTime;
+    private Date createtime;
 
-    public Integer getTaskNo() {
-        return taskNo;
+    public Integer getTaskno() {
+        return taskno;
     }
 
-    public void setTaskNo(Integer taskNo) {
-        this.taskNo = taskNo;
+    public void setTaskno(Integer taskno) {
+        this.taskno = taskno;
     }
 
-    public String getTaskName() {
-        return taskName;
+    public String getTaskname() {
+        return taskname;
     }
 
-    public void setTaskName(String taskName) {
-        this.taskName = taskName == null ? null : taskName.trim();
+    public void setTaskname(String taskname) {
+        this.taskname = taskname == null ? null : taskname.trim();
     }
 
     public String getTno() {
@@ -43,12 +43,12 @@ public class Task {
         this.tno = tno == null ? null : tno.trim();
     }
 
-    public String getTaskContent() {
-        return taskContent;
+    public String getTaskcontent() {
+        return taskcontent;
     }
 
-    public void setTaskContent(String taskContent) {
-        this.taskContent = taskContent == null ? null : taskContent.trim();
+    public void setTaskcontent(String taskcontent) {
+        this.taskcontent = taskcontent == null ? null : taskcontent.trim();
     }
 
     public Boolean getSubmit() {
@@ -59,27 +59,27 @@ public class Task {
         this.submit = submit;
     }
 
-    public Date getStartTime() {
-        return startTime;
+    public Date getStarttime() {
+        return starttime;
     }
 
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
+    public void setStarttime(Date starttime) {
+        this.starttime = starttime;
     }
 
-    public Date getEndTime() {
-        return endTime;
+    public Date getEndtime() {
+        return endtime;
     }
 
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
+    public void setEndtime(Date endtime) {
+        this.endtime = endtime;
     }
 
-    public Date getCreateTime() {
-        return createTime;
+    public Date getCreatetime() {
+        return createtime;
     }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
     }
 }

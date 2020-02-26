@@ -43,13 +43,12 @@
         });
 
         $("#submit1").click(function(){
-
             var type = $("input[name=type]:checked").val();
             var file = document.getElementById("file").files[0];
             if (file == null) {
                 alert("请选择您需要上传的文件！");
             }
-            var fileform = new FormData();
+            var fileform = new FormData(); //表单
             fileform.append("file", file);
             fileform.append("type", type);
             var ADMIN_INSERT_INFO_URL="http://localhost:8080/admin/admin_Insert_Info/";

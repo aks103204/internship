@@ -27,7 +27,7 @@ import java.util.Random;
 @Service("adminService")
 public class AdminImpl {
 
-  @Autowired
+  @Autowired //自动注入
   T_adminMapper adminDao;
   @Autowired
   T_studentMapper studentDao;
@@ -42,9 +42,9 @@ public class AdminImpl {
     T_adminExample.createCriteria().andAnoEqualTo(ano);
     return adminDao.selectByExample(T_adminExample);
   }
-
+//ssm Spring SpringMVC Mybatis
   public boolean login(T_admin t_admin) {
-    T_adminExample T_adminExample = new T_adminExample();
+    T_adminExample T_adminExample = new T_adminExample(); //绑定对象 等待查找
     T_adminExample.createCriteria().andPsdEqualTo(t_admin.getPsd()).andAnoEqualTo(t_admin.getAno());
     return adminDao.selectByExample(T_adminExample).size() > 0;
   }

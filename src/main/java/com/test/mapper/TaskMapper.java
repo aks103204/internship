@@ -10,7 +10,7 @@ public interface TaskMapper {
 
     int deleteByExample(TaskExample example);
 
-    int deleteByPrimaryKey(Integer taskNo);
+    int deleteByPrimaryKey(Integer taskno);
 
     int insert(Task record);
 
@@ -18,7 +18,7 @@ public interface TaskMapper {
 
     List<Task> selectByExample(TaskExample example);
 
-    Task selectByPrimaryKey(Integer taskNo);
+    Task selectByPrimaryKey(Integer taskno);
 
     int updateByExampleSelective(@Param("record") Task record, @Param("example") TaskExample example);
 
@@ -27,4 +27,6 @@ public interface TaskMapper {
     int updateByPrimaryKeySelective(Task record);
 
     int updateByPrimaryKey(Task record);
+	
+	List<Task> queryStudentMissionByTno(@Param("tno") String tno);
 }

@@ -160,7 +160,6 @@
 
     <div class="main">
         <div class="form_wrap">
-            <form class="form_info" id="form_info" enctype="multipart/form-data" action="/admin/AdminUpdatePsd_Servlet" method="post">
                 <div >
                     <input type="file" name="file" accept=".png,.jpg,.gif" onchange="OnInput(this)" id="upHeadImg" style="display: none">
                     <label for="upHeadImg">
@@ -173,14 +172,13 @@
                     </label>
 
                 </div>
-                <div><input class="input_info" type="password" id="old_psd" placeholder="请输入原始密码"><span style="padding-right: 50px;padding-top: 10px;" class="error_message">${updatePsd_message1}</span></div>
-                <div><br><input class="input_info" type="password" id="new_psd" placeholder="请输入新密码"><span style="padding-top: 48px;" class="error_message">${updatePsd_message2}</span></div>
-                <div><br><input class="input_info" type="password" id="confirm_psd" placeholder="请再次输入新密码"><span style="padding-right: 10px;padding-top: 40px;" class="error_message">${updatePsd_message3}</span></div>
+                <div><input class="input_info" type="password" id="old_psd" placeholder="请输入原始密码"><span style="padding-right: 50px;padding-top: 10px;" class="error_message"></span></div>
+                <div><br><input class="input_info" type="password" id="new_psd" placeholder="请输入新密码"><span style="padding-top: 48px;" class="error_message"></span></div>
+                <div><br><input class="input_info" type="password" id="confirm_psd" placeholder="请再次输入新密码"><span style="padding-right: 10px;padding-top: 40px;" class="error_message"></span></div>
                   <div class="confirm_button_wrap">
 
                     <input style="" class="confirm_button" type="button" onclick=admin_Update_Psd() value="确认"/>
                   </div>
-            </form>
         </div>
 
     </div>

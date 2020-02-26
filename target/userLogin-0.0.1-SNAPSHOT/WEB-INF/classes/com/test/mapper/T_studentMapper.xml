@@ -18,7 +18,6 @@
       <result column="tphone" property="tphone" jdbcType="VARCHAR" />
       <result column="tqq" property="tqq" jdbcType="VARCHAR" />
       <result column="tprofession" property="tprofession" jdbcType="VARCHAR" />
-      <result column="cno" property="cno" jdbcType="VARCHAR" />
     </collection>
   </resultMap>
 

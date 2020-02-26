@@ -24,6 +24,7 @@ public class T_teacher {
     public void setStudentList(List<T_student> studentList) {
         this.studentList = studentList;
     }
+
     public String getTno() {
         return tno;
     }

@@ -5,7 +5,9 @@ import com.test.model.T_admin;
 import com.test.model.T_class;
 import com.test.model.T_student;
 import com.test.model.T_teacher;
+import com.test.model.Task;
 import com.test.server.AdminImpl;
+import com.test.server.StudentImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +30,8 @@ public class test {
 
   @Autowired
   private AdminImpl adminService;
+  @Autowired
+  private StudentImpl studentService;
 
 //  @Test
 //  public void testqueryCustomerbyid() {
@@ -96,7 +100,7 @@ public class test {
   public void queryStuInfoByTno() {
     List<T_teacher> list=adminService.queryStudent_TeachersBySno("16201401");
     for(T_teacher tt : list){
-      System.out.println(tt.getTname()+"@@@@@@@");
+      System.out.println(tt.getTno()+"@@@@@@@");
     }
   }
 
@@ -119,5 +123,17 @@ public class test {
   public void queryClassInfoByPrimaryKey() {
     T_class t = adminService.selectByClass_PrimaryKey("162014");
     System.out.println("#########"+t.getCprofession());
+  }
+
+  /*
+  *
+  * **********************************************************************
+  * 以下是学生test
+  * */
+
+  @Test
+  public void queryStudentMissionBySno() {
+    List<Task> t= studentService.queryMissionBySno("16201401");
+    System.out.println("#########"+t);
   }
 }

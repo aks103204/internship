@@ -25,29 +25,68 @@
             document.cookie = name + "=" + value;
         }
         $("#login").click(function(){
-            var ano=$("#username").val();
+            var username=$("#username").val();
             var password=$("#password").val();
+            var type=$("#select1").val();
             if((username=="" || username.length<0)||(password=="" || password.length<0)){
                 alert("必须输入用户名和密码");
                 return;
             }
-            var ADMIN_LOGIN_URL="http://localhost:8080/admin/login/"+ano+"/"+password;
+            var ADMIN_LOGIN_URL="http://localhost:8080/admin/login/"+username+"/"+password;  //Rustful风格
+            var STUDENT_LOGIN_URL="http://localhost:8080/student/login/"+username+"/"+password;  //Rustful风格
+            var TEACHER_LOGIN_URL="http://localhost:8080/teacher/login/"+username+"/"+password;  //Rustful风格
+            if(type=="admin"){
             $.ajax({
-                contentType: "application/json",
-                url:ADMIN_LOGIN_URL,
-                type:"POST",
-                statusCode:{
-                    200:function(data){
-                        addCookie("ano",ano);
-                        window.location="admin/admin_index.jsp";
-                    },
-                    404:function(){
-                        alert("用户名或密码错误！");
-                        window.location="index.jsp";
-                    }
+              contentType: "application/json",
+              url:ADMIN_LOGIN_URL,
+              type:"POST",
+              statusCode:{
+                200:function(data){
+                  addCookie("ano",username);
+                  window.location="admin/admin_index.jsp";
+                },
+                404:function(){
+                  alert("用户名或密码错误！");
+                  window.location="index.jsp";
                 }
+              }
 
             });
+          }else if(type=="teacher"){
+            $.ajax({
+              contentType: "application/json",
+              url:TEACHER_LOGIN_URL,
+              type:"POST",
+              statusCode:{
+                200:function(data){
+                  addCookie("tno",username);
+                  window.location="admin/admin_index.jsp";
+                },
+                404:function(){
+                  alert("用户名或密码错误！");
+                  window.location="index.jsp";
+                }
+              }
+
+            });
+          }else if(type=="student"){
+            $.ajax({
+              contentType: "application/json",
+              url:STUDENT_LOGIN_URL,
+              type:"POST",
+              statusCode:{
+                200:function(data){
+                  addCookie("sno",username);
+                  window.location="student/student_index.jsp";
+                },
+                404:function(){
+                  alert("用户名或密码错误！");
+                  window.location="index.jsp";
+                }
+              }
+
+            });
+          }
         });
     });
 </script>
@@ -78,10 +117,10 @@
                 <li><input name="id" id="username"onkeyup="loadXMLDoc(this.value)" type="text" class="loginuser" placeholder="学号/工号"/></li>
                 <li><input name="password" id="password" type="password" class="loginpwd" placeholder="密码"/></li>
                 <li>
-                    <select name="identity" class="loginselect" style="margin-left: 65px;">
-                        <option value="admin">管理员</option>
-                        <option value="teacher">教师</option>
-                        <option value="student">学生</option>
+                    <select name="identity" id="select1" class="loginselect" style="margin-left: 65px;">
+                        <option value="admin" id="admin">管理员</option>
+                        <option value="teacher" id="teacher">教师</option>
+                        <option value="student" id="student">学生</option>
                     </select>
                 </li>
                 <li>

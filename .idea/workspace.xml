@@ -9,182 +9,50 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fce3f86-5f4e-4bd0-b739-8ba13ab684d9" name="Default Changelist" comment="除了统计图和班级信息导入都已完善功能">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/internship.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/JS/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/JS/jquery.z-pager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_teacher_details.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_student_details.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/page_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/page_bg_hover.jpg" afterDir="false" />
+    <list default="true" id="3fce3f86-5f4e-4bd0-b739-8ba13ab684d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/Tool/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/Tool/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_adminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_adminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_fileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_fileMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_registrationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_registrationMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_tcMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_tcMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/Tool/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_adminExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_adminExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_classExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_classExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_file.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_file.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_fileExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_fileExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_registrationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_registrationExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_studentExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_studentExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_tcExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_tcExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_tcKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_tcKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/T_teacherExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/T_teacherExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/model/TaskExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/model/TaskExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/server/AdminImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/server/AdminImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TraMnaSys.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin_personalInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin_personalInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin_updateInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin_updateInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/bulkInsert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/bulkInsert.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_mana_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_mana_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_manage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_manage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/class_management/student_List.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/fail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/summary_graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/summary_graph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_mana_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_mana_index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/RegistrationInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/student_mission_registInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/check_massion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/check_massion.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/finish_massion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/finish_massion.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/look_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/student_mission_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/student_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/st_mass_sel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/student_personnalInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/st_psd_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/student_updatePsd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/teacher_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/teacher_mission.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/update_massion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/update_massion.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/test/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_classMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_classMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_classMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_classMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_studentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_studentMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_studentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_studentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_teacherMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_teacherMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/T_teacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/mapper/T_teacherMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/mapper/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_adminExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_classExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_file.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_file.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_fileExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_registrationExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_studentExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_tcKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_tcKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/T_teacherExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/model/TaskExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/server/AdminImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/server/AdminImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_classMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_classMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_classMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_classMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_studentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_studentMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_studentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_studentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_teacherMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_teacherMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_teacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/T_teacherMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/mapper/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_adminExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_class.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_classExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_file.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_file.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_fileExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_registrationExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_studentExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_tcKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/T_teacherExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/model/TaskExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/server/AdminImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/com/test/server/AdminImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_personalInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_personalInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_updateInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_updateInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/lib/junit-jupiter-api-5.6.0-M1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/WEB-INF/lib/junit-platform-commons-1.6.0-M1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_updatePsd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/admin_updatePsd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/bulkInsert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/bulkInsert.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/fail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/summary_graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/summary_graph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_mana_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/admin/teacher_management/teacher_mana_index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/RegistrationInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/check_massion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/check_massion.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/finish_massion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/finish_massion.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/look_mission.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/st_mass_sel.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/st_psd_up.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/teacher_mission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/teacher_mission.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/update_massion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/userLogin-0.0.1-SNAPSHOT/student/update_massion.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -211,70 +79,75 @@
     <session id="979884451">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.3" value="8" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="9" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="27" />
-          <entry key="css" value="3" />
+          <entry key="class" value="34" />
+          <entry key="css" value="4" />
           <entry key="gif" value="1" />
-          <entry key="java" value="174" />
+          <entry key="java" value="224" />
           <entry key="js" value="3" />
-          <entry key="jsp" value="194" />
+          <entry key="jsp" value="237" />
           <entry key="png" value="2" />
-          <entry key="properties" value="7" />
+          <entry key="properties" value="8" />
           <entry key="realconfig" value="1" />
           <entry key="rnc" value="1" />
           <entry key="sql" value="3" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="76" />
+          <entry key="xml" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="27" />
-          <entry key="CSS" value="3" />
+          <entry key="CLASS" value="34" />
+          <entry key="CSS" value="4" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="174" />
-          <entry key="JSP" value="194" />
+          <entry key="JAVA" value="224" />
+          <entry key="JSP" value="237" />
           <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="7" />
+          <entry key="Properties" value="8" />
           <entry key="RNG Compact" value="1" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="76" />
+          <entry key="XML" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="5347" />
-          <entry key="jsp" value="4310" />
+          <entry key="java" value="6553" />
+          <entry key="jsp" value="5029" />
           <entry key="properties" value="10" />
           <entry key="txt" value="26" />
-          <entry key="xml" value="980" />
+          <entry key="xml" value="1046" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="5" />
-          <entry key="JAVA" value="5347" />
-          <entry key="JSP" value="4305" />
+          <entry key="JAVA" value="6553" />
+          <entry key="JSP" value="5024" />
           <entry key="PLAIN_TEXT" value="27" />
           <entry key="Properties" value="10" />
           <entry key="SQL" value="17" />
-          <entry key="XML" value="963" />
+          <entry key="XML" value="1029" />
         </counts>
       </usages-collector>
     </session>
@@ -285,55 +158,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_add.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
-              <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="89" column="89" lean-forward="true" selection-start-line="89" selection-start-column="89" selection-end-line="89" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/class_management/class_mana_index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/class_management/class_manage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
-              <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/server/AdminImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="304" column="53" lean-forward="true" selection-start-line="304" selection-start-column="53" selection-end-line="304" selection-end-column="53" />
+            <state relative-caret-position="338">
+              <caret line="75" column="48" lean-forward="true" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -342,38 +170,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/student/student_mission_registInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
+            <state relative-caret-position="99">
+              <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/server/StudentImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/internship.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/model/T_teacher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="133">
+              <caret line="52" column="73" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
               <folding>
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2125#2131#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_registrationMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3232">
+              <caret line="170" column="18" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#student_Info_Update#0;class#AdminController#0" />
+                <element signature="method#teacher_Add_Info#0;class#AdminController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_registrationMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="102" column="69" lean-forward="true" selection-start-line="102" selection-start-column="69" selection-end-line="102" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/server/AdminImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-56">
+              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7920#7921#0" expanded="true" />
+                <element signature="e#7969#7970#0" expanded="true" />
+                <element signature="e#8908#8909#0" expanded="true" />
+                <element signature="e#8959#8960#0" expanded="true" />
+                <element signature="e#9604#9605#0" expanded="true" />
+                <element signature="e#9649#9650#0" expanded="true" />
+                <element signature="e#9705#9706#0" expanded="true" />
+                <element signature="e#9754#9755#0" expanded="true" />
+                <element signature="e#9807#9808#0" expanded="true" />
+                <element signature="e#9858#9859#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -384,9 +250,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -403,20 +269,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/realconfig" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/Tool/InsertByExcel.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_detail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/class_management/student_List.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/demo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/bulkInsert.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_manage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/admin_updateInfo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/admin_personalInfo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/admin_index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/summary_graph.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/model/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/model/T_file.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/model/T_admin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/model/Task.java" />
@@ -429,7 +281,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-config.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/model/T_class.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_student_details.jsp" />
@@ -438,22 +289,37 @@
         <option value="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_info.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_mana_index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/Tool/test.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_info.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_student_details.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_teacher_details.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_add.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/model/T_teacherExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/model/T_teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/class_management/class_manage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/server/AdminImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/bulkInsert.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/student_personnalInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/student_updatePsd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/student_registrationInfo.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/student_index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/teacher_mission.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/check_massion.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/model/T_teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/Tool/test.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/student_mission_index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/student/student_mission_registInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/server/StudentImpl.java" />
       </list>
     </option>
   </component>
@@ -482,17 +348,21 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-210" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1380" />
     <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -564,7 +434,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="class_management" type="462c0819:PsiDirectoryNode" />
+              <item name="student_management" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="internship" type="b2602c69:ProjectViewProjectNode" />
@@ -572,24 +442,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="student_management" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="internship" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="internship" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis.generator:mybatis-generator-core:1.3.2" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -597,26 +460,29 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/weishushu/IdeaPro/internship/src/main/webapp/admin/teacher_management/teacher_add.jsp" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576223149689" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582707419158" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\weishushu\IdeaPro\internship\src\main\resources" />
-      <recent name="E:\weishushu\IdeaPro\internship\src\main\java\com\test\mapper" />
-      <recent name="E:\weishushu\IdeaPro\internship\src\main\java\com\test\model" />
-      <recent name="E:\weishushu\IdeaPro\internship\src\main\webapp\admin\teacher_management" />
-      <recent name="E:\weishushu\IdeaPro\internship\src\main\webapp\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\weishushu\IdeaPro\internship\src\main\java\com\test\model" />
       <recent name="E:\weishushu\IdeaPro\internship\src\main\java\com\test\mapper" />
       <recent name="E:\weishushu\IdeaPro\internship\src\main\webapp\admin\student_management" />
       <recent name="E:\weishushu\IdeaPro\internship\src\main\java\com\test\mapping" />
       <recent name="E:\weishushu\IdeaPro\internship\src\main\webapp\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\weishushu\IdeaPro\internship\src\main\resources" />
+      <recent name="E:\weishushu\IdeaPro\internship\src\main\java\com\test\mapper" />
+      <recent name="E:\weishushu\IdeaPro\internship\src\main\java\com\test\model" />
+      <recent name="E:\weishushu\IdeaPro\internship\src\main\webapp\admin\teacher_management" />
+      <recent name="E:\weishushu\IdeaPro\internship\src\main\webapp\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -631,7 +497,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test.queryTeaInfoBySno">
+  <component name="RunManager" selected="Tomcat Server.Tom">
     <configuration name="test.queryClassInfoByCno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="internship" />
       <extension name="coverage">
@@ -643,22 +509,6 @@
       <option name="PACKAGE_NAME" value="com.test.Tool" />
       <option name="MAIN_CLASS_NAME" value="com.test.Tool.test" />
       <option name="METHOD_NAME" value="queryClassInfoByCno" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.queryClassInfoByPrimaryKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="internship" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.Tool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.Tool" />
-      <option name="MAIN_CLASS_NAME" value="com.test.Tool.test" />
-      <option name="METHOD_NAME" value="queryClassInfoByPrimaryKey" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -680,7 +530,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.queryTeaInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test.queryStuInfoByTno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="internship" />
       <extension name="coverage">
         <pattern>
@@ -690,7 +540,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.test.Tool" />
       <option name="MAIN_CLASS_NAME" value="com.test.Tool.test" />
-      <option name="METHOD_NAME" value="queryTeaInfo" />
+      <option name="METHOD_NAME" value="queryStuInfoByTno" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.queryStudentMissionBySno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="internship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.Tool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.Tool" />
+      <option name="MAIN_CLASS_NAME" value="com.test.Tool.test" />
+      <option name="METHOD_NAME" value="queryStudentMissionBySno" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -789,16 +655,16 @@
       <item itemvalue="JUnit.test.queryStuInfoBySno" />
       <item itemvalue="JUnit.test.queryClassInfoByCno" />
       <item itemvalue="JUnit.test.queryTeaInfoBySno" />
-      <item itemvalue="JUnit.test.queryTeaInfo" />
-      <item itemvalue="JUnit.test.queryClassInfoByPrimaryKey" />
+      <item itemvalue="JUnit.test.queryStudentMissionBySno" />
+      <item itemvalue="JUnit.test.queryStuInfoByTno" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test.queryStudentMissionBySno" />
+        <item itemvalue="JUnit.test.queryStuInfoByTno" />
         <item itemvalue="JUnit.test.queryTeaInfoBySno" />
         <item itemvalue="JUnit.test.queryStuInfoBySno" />
         <item itemvalue="JUnit.test.queryClassInfoByCno" />
-        <item itemvalue="JUnit.test.queryClassInfoByPrimaryKey" />
-        <item itemvalue="JUnit.test.queryTeaInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -830,7 +696,15 @@
       <workItem from="1576111477571" duration="9679000" />
       <workItem from="1576125429737" duration="11418000" />
       <workItem from="1576139715715" duration="1586000" />
-      <workItem from="1576210345915" duration="11967000" />
+      <workItem from="1576210345915" duration="12215000" />
+      <workItem from="1576591739767" duration="4318000" />
+      <workItem from="1576645312560" duration="137000" />
+      <workItem from="1577850963961" duration="612000" />
+      <workItem from="1578283349666" duration="4714000" />
+      <workItem from="1578540846299" duration="3720000" />
+      <workItem from="1580965005028" duration="6280000" />
+      <workItem from="1582609847329" duration="5015000" />
+      <workItem from="1582694939076" duration="10459000" />
     </task>
     <task id="LOCAL-00001" summary="实现自动分页前">
       <created>1575986160344</created>
@@ -853,43 +727,50 @@
       <option name="project" value="LOCAL" />
       <updated>1575986416964</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="除了统计图和班级信息导入都已完善功能">
+      <created>1576223240070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576223240071</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_queryStuInfoBySno - 2019.12.13 at 13h 34m 10s.xml">
-      <configuration name="test.queryStuInfoBySno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 04m 15s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryStuInfoBySno - 2019.12.13 at 13h 35m 43s.xml">
-      <configuration name="test.queryStuInfoBySno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 07m 20s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryStuInfoBySno - 2019.12.13 at 13h 36m 18s.xml">
-      <configuration name="test.queryStuInfoBySno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 07m 29s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryClassInfoByPrimaryKey - 2019.12.13 at 13h 41m 57s.xml">
-      <configuration name="test.queryClassInfoByPrimaryKey" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 07m 49s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryClassInfoByCno - 2019.12.13 at 13h 42m 09s.xml">
-      <configuration name="test.queryClassInfoByCno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 08m 24s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryTeaInfoBySno - 2019.12.13 at 13h 42m 25s.xml">
-      <configuration name="test.queryTeaInfoBySno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 08m 45s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryTeaInfoBySno - 2019.12.13 at 13h 44m 33s.xml">
-      <configuration name="test.queryTeaInfoBySno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 09m 12s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryTeaInfoBySno - 2019.12.13 at 13h 47m 38s.xml">
-      <configuration name="test.queryTeaInfoBySno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 16m 08s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryStuInfoBySno - 2019.12.13 at 13h 57m 50s.xml">
-      <configuration name="test.queryStuInfoBySno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 48m 00s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_queryTeaInfoBySno - 2019.12.13 at 14h 00m 08s.xml">
-      <configuration name="test.queryTeaInfoBySno" configurationId="JUnit" />
+    <history-entry file="test_queryStudentMissionBySno - 2020.02.26 at 15h 48m 59s.xml">
+      <configuration name="test.queryStudentMissionBySno" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165402000" />
+    <option name="totallyTimeSpent" value="200905000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -902,19 +783,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49209931" visible="true" weight="0.2660858" />
-      <window_info id="Structure" order="1" sideWeight="0.5058824" side_tool="true" weight="0.24597855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48758465" visible="true" weight="0.20911528" />
+      <window_info id="Structure" order="1" sideWeight="0.51241535" side_tool="true" weight="0.2922252" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" sideWeight="0.5035587" side_tool="true" weight="0.24262735" />
+      <window_info id="Favorites" order="4" sideWeight="0.51241535" side_tool="true" weight="0.2922252" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.50790066" side_tool="true" weight="0.2660858" />
+      <window_info id="Web" order="7" sideWeight="0.50790066" side_tool="true" weight="0.2808311" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.38128492" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.36871508" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39385474" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -923,7 +803,7 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" weight="0.40642458" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32960895" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.3282123" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3282123" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -956,9 +836,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/test/Tool/test.java</url>
-          <line>66</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/test/Tool/test.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/test/server/StudentImpl.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -968,17 +860,198 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.0.RELEASE/spring-test-4.2.0.RELEASE.jar!/org/springframework/test/context/support/DefaultTestContext.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_teacher_details.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="224">
+          <caret line="176" column="44" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.0.RELEASE/spring-test-4.2.0.RELEASE.jar!/org/springframework/test/context/TestContextManager.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/model/T_teacherExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="-1619">
+          <caret line="525" selection-start-line="525" selection-end-line="525" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/class_management/class_mana_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2296">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/internship.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/class_management/class_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="73" column="63" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/bulkInsert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1484">
+          <caret line="53" column="84" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_adminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="13" selection-start-line="8" selection-start-column="5" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_adminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2828">
+          <caret line="101" selection-start-line="101" selection-end-line="106" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/admin_updateInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2912">
+          <caret line="104" column="113" selection-start-line="104" selection-start-column="83" selection-end-line="104" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="194" column="1" selection-start-line="194" selection-start-column="1" selection-end-line="194" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/admin_personalInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1076">
+          <caret line="71" selection-start-line="71" selection-end-line="96" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="76" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="72" selection-start-column="3" selection-end-line="96" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="11" column="22" lean-forward="true" selection-end-line="94" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="29" column="28" selection-end-line="196" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="18" selection-end-line="93" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2996">
+          <caret line="107" column="11" selection-start-line="105" selection-start-column="1" selection-end-line="107" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/finish_massion.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/teacher_mission.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/student_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="93" column="36" lean-forward="true" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/check_massion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1710">
+          <caret line="113" column="80" selection-start-line="113" selection-start-column="66" selection-end-line="113" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/student_updatePsd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/student_personnalInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2324">
+          <caret line="83" column="75" selection-start-line="83" selection-start-column="75" selection-end-line="83" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/model/T_student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Tool/InsertByExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -986,13 +1059,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#2479#2480#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar!/org/apache/ibatis/binding/MapperProxy.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar!/org/mybatis/spring/SqlSessionTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="135">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="e#5763#5764#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,356 +1089,249 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar!/org/mybatis/spring/SqlSessionTemplate.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar!/org/apache/ibatis/binding/MapperProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="64" column="24" selection-start-line="61" selection-start-column="1" selection-end-line="64" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4060">
-          <caret line="145" column="34" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="42" column="18" selection-start-line="40" selection-start-column="1" selection-end-line="42" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/model/T_class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding>
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/class_management/class_student_details.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="247" selection-start-line="247" selection-end-line="247" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/admin_personalInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2100">
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1576">
-          <caret line="124" column="70" selection-start-line="124" selection-start-column="70" selection-end-line="124" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_classMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1736">
-          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_mana_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="169" column="14" lean-forward="true" selection-start-line="151" selection-start-column="3" selection-end-line="169" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Tool/InsertByExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="182" column="18" lean-forward="true" selection-start-line="182" selection-start-column="18" selection-end-line="182" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_tcMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/model/T_student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="83" column="75" lean-forward="true" selection-start-line="83" selection-start-column="75" selection-end-line="83" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/model/T_tcKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_tsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="86" column="11" lean-forward="true" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_tsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_adminMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_adminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="109" column="25" lean-forward="true" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="26" />
+        <state relative-caret-position="145">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Tool/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="103" column="35" lean-forward="true" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="286" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#student_Info#0;class#AdminController#0" />
-            <element signature="method#student_Info_Update#0;class#AdminController#0" />
-            <element signature="method#student_Add_Info#0;class#AdminController#0" />
-            <element signature="method#teacher_Add_Info#0;class#AdminController#0" />
-            <element signature="method#student_Info_Delete#0;class#AdminController#0" />
-            <element signature="method#teacher_Info_Delete#0;class#AdminController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_student_details.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="162" column="61" lean-forward="true" selection-start-line="162" selection-start-column="61" selection-end-line="162" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/class_management/class_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="159" column="42" selection-start-line="159" selection-start-column="39" selection-end-line="159" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_teacher_details.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="176" column="44" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/teacher_management/teacher_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2800">
-          <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/model/T_teacherExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1619">
-          <caret line="525" selection-start-line="525" selection-end-line="525" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="116" column="11" lean-forward="true" selection-start-line="105" selection-start-column="2" selection-end-line="116" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_teacherMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+        <state relative-caret-position="280">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/model/T_teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="28">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_studentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3024">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/admin_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="68" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="30" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/TaskMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Tool/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/student_mission_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2332">
+          <caret line="161" column="54" selection-start-line="161" selection-start-column="54" selection-end-line="161" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1820">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student/student_mission_registInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_registrationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/mapper/T_registrationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="102" column="69" lean-forward="true" selection-start-line="102" selection-start-column="69" selection-end-line="102" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3232">
+          <caret line="170" column="18" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#student_Info_Update#0;class#AdminController#0" />
+            <element signature="method#teacher_Add_Info#0;class#AdminController#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/server/AdminImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="304" column="53" lean-forward="true" selection-start-line="304" selection-start-column="53" selection-end-line="304" selection-end-column="53" />
+        <state relative-caret-position="-56">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7920#7921#0" expanded="true" />
+            <element signature="e#7969#7970#0" expanded="true" />
+            <element signature="e#8908#8909#0" expanded="true" />
+            <element signature="e#8959#8960#0" expanded="true" />
+            <element signature="e#9604#9605#0" expanded="true" />
+            <element signature="e#9649#9650#0" expanded="true" />
+            <element signature="e#9705#9706#0" expanded="true" />
+            <element signature="e#9754#9755#0" expanded="true" />
+            <element signature="e#9807#9808#0" expanded="true" />
+            <element signature="e#9858#9859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="75" column="48" lean-forward="true" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/admin_updatePsd.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/server/StudentImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/internship.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/student_management/student_mana_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="89" column="89" lean-forward="true" selection-start-line="89" selection-start-column="89" selection-end-line="89" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/class_management/class_mana_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/class_management/class_manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="70" />
+        <state relative-caret-position="133">
+          <caret line="52" column="73" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2125#2131#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>internship:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|internship</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

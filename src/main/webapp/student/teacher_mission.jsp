@@ -1,6 +1,3 @@
-<%@ page import="javaBean.Task" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -44,7 +41,7 @@
 <body style="background:url(../images/topbg.gif) repeat-x;">
 <div class="top">
     <div class="topleft">
-        <a href="/student/main.jsp"><img src="../images/home.png" style="width: 64px;height: 64px" title="系统首页"/></a>
+        <a href="/student/student_index.jsp"><img src="../images/home.png" style="width: 64px;height: 64px" title="系统首页"/></a>
     </div>
 
     <ul class="nav">
@@ -76,7 +73,7 @@
             </div>
             <ul class="menuson">
                 <li ><cite></cite><a href="/student/selectMassage">查找信息</a><i></i></li>
-                <li><cite></cite><a href="/student/st_psd_up.jsp">修改密码</a><i></i></li>
+                <li><cite></cite><a href="/student/student_updatePsd.jsp">修改密码</a><i></i></li>
                 <li class="active"><cite></cite><a href="/student/teacher_mission.jsp">任务栏</a><i></i></li>
             </ul>
         </dd>

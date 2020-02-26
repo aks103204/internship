@@ -43,13 +43,13 @@
 <body style="background:url(../images/topbg.gif) repeat-x;">
 <div class="top">
     <div class="topleft">
-        <a href="main.jsp"><img src="../images/home.png" width="64" height="64" title="系统首页"/></a>
+        <a href="student_index.jsp"><img src="../images/home.png" width="64" height="64" title="系统首页"/></a>
     </div>
 
     <ul class="nav">
-        <li><a href="/student/main.jsp" ><img src="../images/icon02.png" title="1"/>
+        <li><a href="/student/student_index.jsp" ><img src="../images/icon02.png" title="1"/>
             <h2>个人信息</h2></a></li>
-        <li><a href="/student/look_mission.jsp" class="selected"><img src="../images/icon03.png" title="2"/>
+        <li><a href="/student/student_mission_index.jsp" class="selected"><img src="../images/icon03.png" title="2"/>
             <h2>任务模块</h2></a></li>
     </ul>
 
@@ -76,7 +76,7 @@
             <ul class="menuson">
 
                 <li class="active"><cite></cite><a href="/student/massionServlet">查看任务</a><i></i></li>
-                <li ><cite></cite><a href="/student/RegistrationInfo.jsp">登记实训信息 </a><i></i></li>
+                <li ><cite></cite><a href="/student/student_mission_registInfo.jsp">登记实训信息 </a><i></i></li>
 
             </ul>
         </dd>

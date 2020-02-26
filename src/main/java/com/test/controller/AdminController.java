@@ -3,7 +3,6 @@ package com.test.controller;
 
 import com.test.model.T_admin;
 import com.test.model.T_class;
-import com.test.model.T_file;
 import com.test.model.T_student;
 import com.test.model.T_teacher;
 import com.test.server.AdminImpl;
@@ -25,7 +24,6 @@ import java.sql.Blob;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
 @RestController
 @CrossOrigin
 @RequestMapping(name = "admin", value = {"/admin"})
@@ -36,10 +34,7 @@ public class AdminController {
   }
 
   @Autowired
-  private AdminImpl adminService;
-  @Autowired
-  private HttpServletRequest request;
-
+  private AdminImpl adminService;  //自动注入
   @RequestMapping(value = "/login/{ano}/{password}")
   public ResponseEntity<Void> login(@PathVariable("ano") String ano,
       @PathVariable("password") String psd) {

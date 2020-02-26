@@ -3,6 +3,7 @@ package com.test.mapper;
 import com.test.model.T_student;
 import com.test.model.T_studentExample;
 import com.test.model.T_teacher;
+import com.test.model.Task;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
@@ -32,4 +33,5 @@ public interface T_studentMapper {
     List<T_student> queryAllStudentInfo();
 
     T_student queryStudent_TeacherBySno(@Param("sno") String sno);
+
 }
